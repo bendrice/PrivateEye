@@ -5,7 +5,7 @@ services:
 
   ##################################################################
   # configure the webserver container
-  web:
+  my_web:
     
     # Set up the web server according to the Dockerfile inside the api/ folder
     build: flask-app/
@@ -26,7 +26,7 @@ services:
 
   ##################################################################
   # configure the mysql container
-  db:
+  my_db:
     # We are using the base image of MySQL v.8
     image: mysql:8
     container_name: db
@@ -57,7 +57,7 @@ services:
 
   ##################################################################
   # configure the AppSmith container (borrowed directly from Appsmith)
-  appsmith:
+  my_appsmith:
     image: index.docker.io/appsmith/appsmith-ce
     container_name: appsmith
     ports:
