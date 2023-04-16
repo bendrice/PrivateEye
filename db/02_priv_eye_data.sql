@@ -920,206 +920,107 @@ VALUES (1, 'Aronin', 'Modestia'),
 
 
 
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (1, 82, 9, false, true, '2021-10-27 12:43:55', '2023-03-19 05:36:13');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (2, 9, 9, false, true, '2022-05-17 14:18:53', '2023-02-14 08:54:58');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (3, 51, 4, false, true, '2021-07-25 03:49:06', '2023-02-24 19:34:52');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (4, 90, 2, true, true, '2021-10-05 02:44:54', '2023-02-15 14:44:30');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (5, 48, 7, true, false, '2022-01-25 21:19:22', '2023-03-06 01:37:39');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (6, 58, 5, false, true, '2022-09-15 22:30:48', '2023-03-09 06:31:11');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (7, 85, 0, true, false, '2021-08-25 00:25:42', '2023-02-15 01:48:24');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (8, 62, 8, false, true, '2022-12-30 12:02:14', '2023-02-14 03:14:45');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (9, 76, 6, false, true, '2022-06-26 12:30:52', '2023-02-08 10:24:23');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (10, 23, 3, false, true, '2022-09-29 06:41:06', '2023-03-22 08:23:44');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (11, 98, 1, true, true, '2022-02-04 20:27:42', '2023-02-12 01:41:04');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (12, 75, 10, false, true, '2022-04-12 08:26:34', '2023-04-04 07:07:01');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (13, 43, 1, false, true, '2022-09-11 10:08:15', '2023-03-06 19:05:03');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (14, 3, 7, true, true, '2022-12-20 13:30:29', '2023-02-19 13:37:50');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (15, 4, 8, false, true, '2022-04-16 21:50:42', '2023-03-18 18:40:11');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (16, 33, 8, false, false, '2022-02-28 22:07:46', '2023-02-22 23:50:35');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (17, 88, 6, true, true, '2021-10-18 07:45:54', '2023-02-28 15:35:36');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (18, 72, 8, false, false, '2022-09-04 16:09:57', '2023-03-14 05:45:19');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (19, 57, 0, false, false, '2021-09-02 12:37:49', '2023-02-05 20:48:17');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (20, 100, 10, false, false, '2022-03-15 08:45:19', '2023-02-04 23:21:58');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (21, 68, 7, true, true, '2022-09-12 04:54:45', '2023-02-28 12:37:26');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (22, 48, 5, false, true, '2021-10-04 08:12:38', '2023-03-13 19:53:22');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (23, 88, 10, true, true, '2022-08-07 04:40:50', '2023-02-17 11:14:22');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (24, 99, 5, true, false, '2021-12-14 07:14:58', '2023-03-13 02:43:30');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (25, 30, 3, false, false, '2021-12-08 23:38:19', '2023-02-15 14:19:29');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (26, 16, 5, false, true, '2021-12-16 05:34:03', '2023-03-05 05:04:23');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (27, 70, 3, true, false, '2021-07-12 10:17:53', '2023-02-14 06:56:50');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (28, 99, 3, false, false, '2023-01-25 19:50:59', '2023-02-27 13:24:29');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (29, 8, 5, true, true, '2022-06-22 22:27:35', '2023-03-30 01:58:10');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (30, 36, 3, false, false, '2021-11-02 08:53:09', '2023-03-12 21:25:54');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (31, 14, 5, false, true, '2021-07-27 10:31:52', '2023-03-15 21:39:53');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (32, 7, 2, false, false, '2022-04-30 21:15:35', '2023-03-01 23:51:18');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (33, 97, 1, false, true, '2023-01-31 13:46:43', '2023-03-08 02:50:24');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (34, 38, 0, true, false, '2022-07-02 23:58:28', '2023-02-17 17:04:44');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (35, 99, 9, false, false, '2023-01-05 06:42:40', '2023-03-11 23:23:37');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (36, 40, 7, true, false, '2022-01-27 20:49:52', '2023-04-03 14:06:51');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (37, 94, 8, true, true, '2022-03-05 08:59:08', '2023-03-14 09:32:23');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (38, 31, 2, false, true, '2022-04-29 14:59:18', '2023-02-11 05:54:45');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (39, 70, 8, true, true, '2021-07-08 23:40:50', '2023-04-01 03:18:45');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (40, 95, 0, true, false, '2022-11-26 04:56:17', '2023-03-07 17:45:24');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (41, 47, 4, false, true, '2022-08-01 06:52:56', '2023-02-27 06:47:57');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (42, 78, 6, false, false, '2022-02-08 07:32:35', '2023-03-23 03:13:28');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (43, 14, 8, false, false, '2022-11-19 09:53:37', '2023-02-06 07:40:15');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (44, 84, 9, true, true, '2021-12-16 00:33:39', '2023-02-27 13:00:23');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (45, 12, 8, false, true, '2022-01-15 07:30:36', '2023-02-16 23:58:22');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (46, 67, 3, true, true, '2022-03-14 04:15:30', '2023-02-13 03:29:39');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (47, 91, 6, false, true, '2021-11-08 18:44:35', '2023-04-02 04:07:43');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (48, 53, 8, false, false, '2022-03-05 13:33:54', '2023-02-07 02:08:07');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (49, 13, 2, true, false, '2022-10-05 00:12:20', '2023-02-13 21:59:34');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (50, 38, 1, false, false, '2021-12-29 13:05:35', '2023-03-20 08:37:35');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (51, 98, 5, false, true, '2021-12-23 15:47:04', '2023-02-18 13:54:21');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (52, 78, 10, false, false, '2021-09-24 01:40:36', '2023-02-03 20:23:01');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (53, 41, 6, false, false, '2021-07-12 03:32:42', '2023-03-01 16:33:17');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (54, 90, 8, false, false, '2022-10-18 20:19:18', '2023-03-21 11:44:12');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (55, 43, 5, true, false, '2022-10-06 08:17:16', '2023-02-08 09:04:02');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (56, 41, 9, true, true, '2022-08-09 11:10:54', '2023-02-22 13:51:09');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (57, 20, 6, false, true, '2022-08-26 06:16:44', '2023-03-08 02:56:03');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (58, 79, 9, true, false, '2022-11-03 17:20:05', '2023-02-03 22:22:38');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (59, 11, 3, false, true, '2021-10-18 00:11:18', '2023-03-06 06:27:43');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (60, 19, 8, false, false, '2022-05-13 12:45:37', '2023-03-24 11:23:39');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (61, 33, 4, false, false, '2021-12-16 14:45:41', '2023-03-08 16:57:56');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (62, 32, 4, false, true, '2021-12-25 13:20:01', '2023-02-11 15:09:09');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (63, 27, 4, true, false, '2022-10-11 18:49:56', '2023-03-03 05:39:16');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (64, 78, 2, true, true, '2022-10-15 03:10:34', '2023-02-24 05:44:06');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (65, 40, 6, true, false, '2022-07-01 15:38:01', '2023-02-12 07:21:41');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (66, 100, 0, true, false, '2022-08-14 09:52:23', '2023-03-12 06:00:39');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (67, 20, 2, false, true, '2021-11-26 14:11:56', '2023-03-27 11:09:49');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (68, 53, 6, false, true, '2021-09-16 13:37:43', '2023-03-23 13:28:01');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (69, 92, 9, true, true, '2022-01-09 06:18:49', '2023-02-03 22:04:57');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (70, 64, 5, true, false, '2021-08-21 22:50:58', '2023-02-05 08:07:20');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (71, 18, 6, true, false, '2021-10-16 08:40:28', '2023-03-02 16:47:49');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (72, 73, 4, false, false, '2023-01-20 14:53:07', '2023-02-19 07:07:55');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (73, 79, 3, false, false, '2021-07-14 02:35:42', '2023-03-20 09:16:16');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (74, 24, 2, false, false, '2022-04-25 01:45:13', '2023-03-29 09:16:01');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (75, 22, 4, false, true, '2021-10-20 15:02:36', '2023-03-25 21:31:58');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (76, 41, 9, false, true, '2021-10-04 03:12:14', '2023-03-10 20:28:39');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (77, 49, 9, false, true, '2022-10-20 20:45:21', '2023-02-09 23:45:33');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (78, 72, 4, true, false, '2022-05-18 19:26:31', '2023-02-23 12:38:31');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (79, 8, 6, false, true, '2022-04-08 22:12:50', '2023-03-12 17:30:52');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (80, 38, 0, true, false, '2021-07-10 10:39:43', '2023-02-19 17:20:37');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (81, 20, 6, false, true, '2022-06-21 19:47:49', '2023-03-29 13:06:54');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (82, 97, 6, false, true, '2022-12-25 03:53:09', '2023-03-03 18:56:48');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (83, 23, 7, true, false, '2021-07-07 21:29:16', '2023-03-12 01:43:21');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (84, 7, 4, true, false, '2021-07-20 04:22:08', '2023-02-16 02:00:01');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (85, 44, 3, false, false, '2022-01-16 09:33:44', '2023-03-05 19:34:21');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (86, 67, 6, false, true, '2021-10-24 03:19:20', '2023-03-04 10:35:48');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (87, 30, 0, true, false, '2021-07-26 02:32:52', '2023-04-04 10:54:09');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (88, 62, 10, false, true, '2022-12-06 11:46:46', '2023-02-07 14:40:22');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (89, 58, 7, true, true, '2021-08-16 21:29:51', '2023-03-03 12:26:14');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (90, 78, 6, false, false, '2022-01-03 20:36:29', '2023-02-12 12:03:05');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (91, 16, 3, false, true, '2022-11-20 05:34:00', '2023-02-28 06:38:43');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (92, 64, 1, true, true, '2022-06-10 13:17:30', '2023-02-20 06:52:56');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (93, 47, 6, true, true, '2021-11-04 06:52:21', '2023-04-03 17:57:54');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (94, 14, 5, false, false, '2022-04-19 17:27:48', '2023-02-06 23:48:11');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (95, 86, 1, false, false, '2022-07-24 00:57:51', '2023-03-20 04:24:32');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (96, 32, 6, false, true, '2022-12-24 09:48:24', '2023-02-04 19:27:26');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (97, 58, 3, false, false, '2022-03-03 14:33:28', '2023-03-11 15:09:51');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (98, 62, 10, false, false, '2022-09-05 10:57:19', '2023-03-26 05:03:57');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (99, 66, 2, false, false, '2022-03-29 10:00:07', '2023-02-04 18:51:06');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
-VALUES (100, 96, 1, false, false, '2022-03-26 04:10:39', '2023-03-14 23:15:48');
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (1,71,4,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (2,55,4,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (3,40,2,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (4,72,3,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (5,82,4,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (6,73,3,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (7,92,0,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (8,32,0,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (9,34,1,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (10,23,10,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (11,57,0,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (12,59,4,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (13,24,7,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (14,87,10,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (15,9,10,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (16,22,4,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (17,57,0,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (18,70,6,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (19,83,3,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (20,40,9,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (21,46,8,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (22,98,7,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (23,95,6,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (24,57,1,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (25,96,10,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (26,79,8,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (27,63,3,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (28,10,7,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (29,71,0,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (30,29,8,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (31,51,5,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (32,92,7,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (33,100,1,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (34,40,4,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (35,20,0,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (36,69,1,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (37,22,3,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (38,14,7,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (39,26,10,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (40,85,6,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (41,10,6,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (42,26,7,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (43,38,10,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (44,84,0,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (45,4,5,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (46,91,8,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (47,13,3,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (48,15,8,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (49,27,10,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (50,24,2,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (51,16,9,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (52,97,6,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (53,2,2,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (54,84,8,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (55,76,2,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (56,82,7,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (57,3,1,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (58,84,9,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (59,95,8,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (60,5,5,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (61,60,0,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (62,15,8,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (63,87,0,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (64,8,2,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (65,42,9,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (66,79,7,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (67,17,9,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (68,58,5,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (69,40,8,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (70,33,4,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (71,36,7,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (72,50,5,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (73,27,7,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (74,40,2,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (75,83,6,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (76,76,5,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (77,41,9,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (78,16,2,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (79,99,8,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (80,81,1,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (81,30,2,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (82,64,9,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (83,41,4,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (84,40,0,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (85,14,0,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (86,2,3,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (87,76,8,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (88,59,0,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (89,13,6,true,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (90,79,3,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (91,46,10,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (92,45,0,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (93,88,0,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (94,24,9,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (95,14,7,true,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (96,61,2,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (97,21,3,false,false);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (98,82,6,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (99,53,4,false,true);
+INSERT INTO Deal(deal_id,ask_id,feasibility,top_5,deal_status) VALUES (100,24,0,true,true);
+
 
 
 INSERT INTO Bid(bid_id, pe_id, deal_id, bid_range, bid_price, bid_status)
