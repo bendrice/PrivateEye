@@ -1,3 +1,5 @@
+USE PrivateEyeDB; 
+
 INSERT INTO `PE_Firm`
 VALUES (1, 'Stanton-Terry', 'California', '1422668.85'),
        (2, 'Paucek-Kerluke', 'Oklahoma', '7723803.74'),
