@@ -1,104 +1,104 @@
-INSERT INTO PE_Firm
-VALUES (1, 'Haley Inc', 'Texas', '6888423.31'),
-       (2, 'Bauch, Koss and Ritchie', 'Ohio', '7961535.54'),
-       (3, 'Stoltenberg-Ernser', 'Ohio', '7639082.71'),
-       (4, 'Wisoky Inc', 'Virginia', '2719499.87'),
-       (5, 'Leuschke and Sons', 'Mississippi', '4410140.12'),
-       (6, 'Green, Marquardt and Balistreri', 'Florida', '4161186.1'),
-       (7, 'Murazik LLC', 'Virginia', '3892279.33'),
-       (8, 'Johnson LLC', 'Virginia', '8595553.15'),
-       (9, 'Huel-Hessel', 'Texas', '7051891.52'),
-       (10, 'Hodkiewicz Inc', 'Missouri', '3202273.73'),
-       (11, 'DuBuque, Dickinson and Jaskolski', 'Georgia', '8200704.68'),
-       (12, 'Kiehn Group', 'California', '7684856.21'),
-       (13, 'Smith, O''Hara and Fritsch', 'Indiana', '4140342.09'),
-       (14, 'Toy Group', 'Nevada', '8529669.41'),
-       (15, 'Homenick-Jerde', 'Florida', '9876080.99'),
-       (16, 'Murray Group', 'Iowa', '7007702.92'),
-       (17, 'Jaskolski and Sons', 'California', '4363940.13'),
-       (18, 'Auer and Sons', 'Texas', '5573170.64'),
-       (19, 'Ward, Mayert and Lowe', 'North Carolina', '2628143.91'),
-       (20, 'Greenholt-Corkery', 'Kentucky', '8882827.46'),
-       (21, 'Schulist LLC', 'California', '3697788.54'),
-       (22, 'Windler-Mayer', 'North Carolina', '7765478.0'),
-       (23, 'Schowalter, Boyle and Wiza', 'California', '1088966.86'),
-       (24, 'Dibbert-Jast', 'New York', '9413596.94'),
-       (25, 'Weimann Group', 'Florida', '8177576.62'),
-       (26, 'Fisher, Hackett and Lynch', 'Minnesota', '6672718.17'),
-       (27, 'Kozey Group', 'North Dakota', '2451934.69'),
-       (28, 'Haley Inc', 'North Carolina', '5091157.47'),
-       (29, 'Hirthe and Sons', 'Florida', '7658860.68'),
-       (30, 'Marquardt-Rath', 'California', '7551886.82'),
-       (31, 'Lockman, Jakubowski and Schneider', 'Ohio', '8281230.33'),
-       (32, 'Becker-Quitzon', 'Indiana', '9633939.81'),
-       (33, 'DuBuque-Turcotte', 'New York', '3913648.55'),
-       (34, 'Stroman, Goldner and Collins', 'New York', '6917851.71'),
-       (35, 'Barton, Jacobs and Heaney', 'Alaska', '7980231.09'),
-       (36, 'Mann Inc', 'Michigan', '6342734.89'),
-       (37, 'Connelly-Howell', 'California', '7569885.62'),
-       (38, 'Paucek and Sons', 'Illinois', '6080056.03'),
-       (39, 'Bode and Sons', 'California', '7959692.87'),
-       (40, 'Lowe Group', 'Louisiana', '9880411.11'),
-       (41, 'Grant LLC', 'North Carolina', '3113591.09'),
-       (42, 'Marvin, Heidenreich and Runte', 'Florida', '5176442.87'),
-       (43, 'Franecki, Treutel and Gislason', 'Texas', '5944757.38'),
-       (44, 'Bernier, Ondricka and Johnson', 'Florida', '1551925.26'),
-       (45, 'Zemlak Inc', 'California', '5611894.15'),
-       (46, 'Cormier LLC', 'Tennessee', '4862007.81'),
-       (47, 'Greenfelder and Sons', 'Massachusetts', '9768148.99'),
-       (48, 'Pouros, Spencer and Ratke', 'California', '4371984.26'),
-       (49, 'Leffler, Schultz and Harris', 'California', '2214874.35'),
-       (50, 'McLaughlin-Lehner', 'Minnesota', '8019925.07'),
-       (51, 'Bergstrom-Ryan', 'California', '8224713.06'),
-       (52, 'Goldner Inc', 'Washington', '2947771.0'),
-       (53, 'Stroman and Sons', 'New York', '9840454.37'),
-       (54, 'Nikolaus, Bins and Franecki', 'Missouri', '3598672.66'),
-       (55, 'Corkery Group', 'Massachusetts', '9944055.2'),
-       (56, 'Runolfsson and Sons', 'District of Columbia', '7698690.68'),
-       (57, 'Gleason Group', 'Connecticut', '7010417.02'),
-       (58, 'Kozey, Tillman and Kerluke', 'Texas', '9839905.57'),
-       (59, 'Will-Okuneva', 'Utah', '4007736.93'),
-       (60, 'O''Hara Group', 'New York', '2289748.0'),
-       (61, 'Kulas Group', 'Pennsylvania', '9098541.57'),
-       (62, 'Larson, Shields and Hackett', 'Texas', '3015206.56'),
-       (63, 'Keebler, Sporer and Douglas', 'Ohio', '4272476.6'),
-       (64, 'Gutkowski, Hilpert and Heller', 'Texas', '1177959.92'),
-       (65, 'Dare-Waters', 'New York', '2975497.94'),
-       (66, 'Collier, Hammes and Kerluke', 'Massachusetts', '5343172.81'),
-       (67, 'Mante, Stoltenberg and Mann', 'Utah', '3518818.7'),
-       (68, 'Stokes-Johns', 'Arizona', '6612303.94'),
-       (69, 'Franecki-Dickinson', 'West Virginia', '2851929.01'),
-       (70, 'Harvey-Wuckert', 'North Dakota', '8424376.79'),
-       (71, 'Ledner Group', 'Florida', '4455546.02'),
-       (72, 'Beier-Sporer', 'California', '9882193.96'),
-       (73, 'Blanda, Stamm and Spencer', 'Indiana', '7187664.2'),
-       (74, 'Kub, Bruen and Steuber', 'Florida', '5817294.94'),
-       (75, 'Mraz, Jacobi and Hauck', 'Texas', '6961155.14'),
-       (76, 'Dibbert LLC', 'Georgia', '7675701.71'),
-       (77, 'Swaniawski-Schoen', 'Virginia', '8488521.1'),
-       (78, 'Schaden, Fadel and Kozey', 'West Virginia', '3696973.0'),
-       (79, 'Goodwin-Lemke', 'Colorado', '7295796.09'),
-       (80, 'O''Keefe Group', 'Georgia', '9919659.39'),
-       (81, 'Gusikowski Group', 'New York', '8544190.7'),
-       (82, 'Rice-Strosin', 'Texas', '2418658.79'),
-       (83, 'Corkery, O''Kon and Wiza', 'Arizona', '7174519.24'),
-       (84, 'Turcotte-Rempel', 'Minnesota', '2060669.19'),
-       (85, 'Brakus and Sons', 'Florida', '2091438.56'),
-       (86, 'Botsford LLC', 'Mississippi', '2621278.17'),
-       (87, 'Kovacek-Gleason', 'Iowa', '8492444.61'),
-       (88, 'Wuckert-Moen', 'New York', '5121237.14'),
-       (89, 'Sanford Group', 'Montana', '1182527.05'),
-       (90, 'Wintheiser Group', 'Ohio', '7837285.99'),
-       (91, 'Murazik, Harris and Mitchell', 'California', '8686913.34'),
-       (92, 'Blick, Koss and Kertzmann', 'New York', '5559176.63'),
-       (93, 'Kreiger-Shields', 'New Mexico', '8993529.17'),
-       (94, 'Kub-Donnelly', 'Iowa', '4223266.71'),
-       (95, 'Walker and Sons', 'West Virginia', '7314909.51'),
-       (96, 'Osinski and Sons', 'Ohio', '7302148.24'),
-       (97, 'Kertzmann, Jacobi and Lynch', 'Kentucky', '8875273.76'),
-       (98, 'Schamberger, Johnson and Metz', 'Arizona', '3014360.97'),
-       (99, 'Bins-Hermann', 'Virginia', '9278790.78'),
-       (100, 'Douglas-Rosenbaum', 'Oklahoma', '1688192.07');
+INSERT INTO `PE_Firm`
+VALUES (1, 'Stanton-Terry', 'California', '1422668.85'),
+       (2, 'Paucek-Kerluke', 'Oklahoma', '7723803.74'),
+       (3, 'Langworth-Terry', 'New York', '7592666.95'),
+       (4, 'Lynch-Green', 'District of Columbia', '6266026.09'),
+       (5, 'Daugherty, Lueilwitz and Goyette', 'Texas', '5103582.11'),
+       (6, 'Cruickshank-Macejkovic', 'Iowa', '8503503.16'),
+       (7, 'Boehm-Hackett', 'North Carolina', '2107981.86'),
+       (8, 'Swaniawski LLC', 'New Jersey', '2340538.25'),
+       (9, 'Strosin-Kuhic', 'Tennessee', '2916407.05'),
+       (10, 'Casper Group', 'Minnesota', '9751587.64'),
+       (11, 'Rau, Dibbert and Botsford', 'Wisconsin', '6197833.4'),
+       (12, 'Nader-Rippin', 'Texas', '7373668.05'),
+       (13, 'Swift and Sons', 'District of Columbia', '8699649.77'),
+       (14, 'Morar Inc', 'Utah', '3104841.86'),
+       (15, 'Schuster Group', 'Rhode Island', '9124244.91'),
+       (16, 'Weimann Inc', 'California', '4758667.17'),
+       (17, 'Stracke LLC', 'Pennsylvania', '1872342.73'),
+       (18, 'Dickens-Durgan', 'California', '2741450.6'),
+       (19, 'Schulist, Kuhlman and Dickens', 'Nebraska', '6995416.26'),
+       (20, 'Russel-Gerlach', 'Kentucky', '1214420.66'),
+       (21, 'Daniel Inc', 'New York', '3335375.3'),
+       (22, 'Greenfelder-Bayer', 'California', '4475414.86'),
+       (23, 'Powlowski, Spencer and Streich', 'Virginia', '8457120.71'),
+       (24, 'Sawayn, Watsica and Prohaska', 'Indiana', '3907838.71'),
+       (25, 'Weimann-White', 'Virginia', '4685463.63'),
+       (26, 'Rempel-Labadie', 'California', '1336500.8'),
+       (27, 'Kuvalis Inc', 'California', '1301341.67'),
+       (28, 'Little-Windler', 'Missouri', '2530605.41'),
+       (29, 'Veum Inc', 'Texas', '2113669.83'),
+       (30, 'Kertzmann, Schneider and Ortiz', 'Florida', '2187664.73'),
+       (31, 'Simonis LLC', 'Virginia', '7437002.36'),
+       (32, 'Dickens-Rippin', 'Florida', '4460349.82'),
+       (33, 'Harvey, Beatty and Baumbach', 'Minnesota', '8269176.94'),
+       (34, 'Stiedemann-Durgan', 'Texas', '1185081.12'),
+       (35, 'Abbott LLC', 'Minnesota', '8207060.89'),
+       (36, 'Hills, Tillman and Moore', 'Texas', '8930408.44'),
+       (37, 'Kub-Shields', 'Wisconsin', '7182665.37'),
+       (38, 'Lynch, Schmeler and Hegmann', 'Connecticut', '4930505.78'),
+       (39, 'Witting Inc', 'New Jersey', '4273887.59'),
+       (40, 'Purdy-Lueilwitz', 'Alabama', '6654869.49'),
+       (41, 'Lebsack, Frami and Langworth', 'Pennsylvania', '7689049.39'),
+       (42, 'Hoeger Group', 'Michigan', '5871099.8'),
+       (43, 'Lueilwitz-Pagac', 'Virginia', '4850003.87'),
+       (44, 'Gleichner LLC', 'Texas', '2618029.95'),
+       (45, 'Hermann, Pollich and Morar', 'Colorado', '1553062.79'),
+       (46, 'Dooley, Adams and Sauer', 'Illinois', '8244128.35'),
+       (47, 'Weimann Inc', 'Maryland', '6200306.37'),
+       (48, 'Abbott-Hessel', 'Florida', '3803540.03'),
+       (49, 'Kuhn, Johnston and Thiel', 'West Virginia', '6823833.07'),
+       (50, 'Moore-Bergnaum', 'New Jersey', '1425544.9'),
+       (51, 'Weimann-Maggio', 'Michigan', '3728646.19'),
+       (52, 'Davis Inc', 'Georgia', '3801443.58'),
+       (53, 'Schneider, Torphy and Kuhn', 'Missouri', '3690763.06'),
+       (54, 'Effertz-Ortiz', 'Florida', '7950965.94'),
+       (55, 'Streich, Jaskolski and Bergstrom', 'Florida', '4657099.39'),
+       (56, 'Steuber-Russel', 'Texas', '8874972.94'),
+       (57, 'Predovic, Sanford and Price', 'New York', '8754203.81'),
+       (58, 'Schinner-Thiel', 'Indiana', '2422283.51'),
+       (59, 'Ruecker, Bernier and Ortiz', 'Iowa', '9172684.75'),
+       (60, 'Satterfield Inc', 'Missouri', '3528320.64'),
+       (61, 'Jast, Langworth and Johnson', 'Nevada', '7372649.19'),
+       (62, 'Cummings Inc', 'California', '8753711.93'),
+       (63, 'Robel, Quigley and Zieme', 'Nevada', '8114327.06'),
+       (64, 'Bashirian-Skiles', 'California', '2015083.43'),
+       (65, 'Mayer Group', 'Colorado', '8544905.33'),
+       (66, 'Rodriguez, Kertzmann and Hamill', 'Wisconsin', '5499427.88'),
+       (67, 'Wintheiser Group', 'Texas', '4581178.21'),
+       (68, 'Kirlin-Denesik', 'California', '9825429.98'),
+       (69, 'Jacobi Group', 'Tennessee', '8777021.3'),
+       (70, 'O''Connell-Block', 'Texas', '3715023.54'),
+       (71, 'Volkman-Morissette', 'Virginia', '5794280.66'),
+       (72, 'Runolfsson and Sons', 'New York', '3488927.04'),
+       (73, 'Rippin Inc', 'Texas', '6892059.02'),
+       (74, 'Rogahn, Harber and Marvin', 'Massachusetts', '2952962.1'),
+       (75, 'Veum LLC', 'Washington', '5523120.63'),
+       (76, 'Pouros, Hegmann and Stehr', 'California', '4572327.83'),
+       (77, 'McCullough, Connelly and Heidenreich', 'Tennessee', '5756017.62'),
+       (78, 'Hintz and Sons', 'Missouri', '1672617.35'),
+       (79, 'Mueller-Heathcote', 'Wisconsin', '9430531.07'),
+       (80, 'McDermott Inc', 'Kansas', '5998305.59'),
+       (81, 'Donnelly, Cruickshank and Cremin', 'North Carolina', '3505621.24'),
+       (82, 'Fisher and Sons', 'Texas', '5788073.03'),
+       (83, 'Rolfson-Mayer', 'Iowa', '2278582.7'),
+       (84, 'Pollich-McLaughlin', 'North Carolina', '4870741.83'),
+       (85, 'Lesch, Lang and McClure', 'Georgia', '5829373.48'),
+       (86, 'Larkin and Sons', 'California', '7005486.73'),
+       (87, 'Fritsch-Ondricka', 'Virginia', '6144407.09'),
+       (88, 'Leffler, Quigley and O''Conner', 'Alabama', '8759459.48'),
+       (89, 'Schaden LLC', 'Kentucky', '4644301.1'),
+       (90, 'Schneider, Simonis and Corkery', 'Connecticut', '6288419.42'),
+       (91, 'Tremblay, Doyle and Leffler', 'Washington', '7095251.45'),
+       (92, 'Hayes-Hartmann', 'Alabama', '2437161.63'),
+       (93, 'Fahey Inc', 'Louisiana', '9425770.8'),
+       (94, 'Ernser, Connelly and Roob', 'Wisconsin', '3022813.44'),
+       (95, 'Fritsch, Macejkovic and O''Hara', 'Illinois', '3453851.85'),
+       (96, 'Feest-Waelchi', 'Virginia', '8951951.51'),
+       (97, 'Hintz, Bins and Cremin', 'California', '2329933.63'),
+       (98, 'Morissette, Bergnaum and Swift', 'Nebraska', '5161457.1'),
+       (99, 'Lindgren LLC', 'Kentucky', '9112323.19'),
+       (100, 'Hartmann and Sons', 'Pennsylvania', '8613492.4');
 
 
 INSERT INTO `Industry`
@@ -508,206 +508,206 @@ VALUES (99, 0.03, 25080571, true);
 INSERT INTO Ask(ask_id, ask_range, ask_price, ask_status)
 VALUES (100, 0.32, 19539238, true);
 
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (1, 29, 47, 89, 'Dicki-Kessler', 'Florida', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (2, 27, 5, 42, 'Schowalter, Ritchie and Cummings', 'Indiana', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (3, 76, 46, 92, 'White, Yost and Howell', 'Georgia', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (4, 63, 86, 70, 'Abernathy-Nitzsche', 'Florida', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (5, 6, 49, 82, 'Cartwright-Kulas', 'California', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (6, 43, 90, 16, 'Krajcik and Sons', 'Arizona', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (7, 99, 48, 9, 'Brekke-Bernier', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (8, 41, 41, 17, 'Konopelski Group', 'Maryland', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (9, 46, 82, 20, 'Crist-Jast', 'Wisconsin', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (10, 15, 78, 30, 'Rippin LLC', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (11, 22, 35, 43, 'Reilly-Heathcote', 'Washington', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (12, 1, 75, 25, 'Kemmer-Bartell', 'Nevada', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (13, 51, 27, 1, 'Torphy Inc', 'California', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (14, 75, 9, 63, 'Botsford-Renner', 'Texas', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (15, 97, 72, 8, 'Adams and Sons', 'California', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (16, 10, 43, 84, 'Lind-Wiza', 'Maryland', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (17, 88, 20, 23, 'Medhurst, Marks and Olson', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (18, 91, 62, 16, 'Hoppe-Huel', 'Florida', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (19, 69, 6, 24, 'Schamberger Group', 'Massachusetts', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (20, 93, 88, 40, 'Carroll Group', 'Indiana', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (21, 87, 12, 60, 'Zboncak, Littel and Homenick', 'Tennessee', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (22, 18, 71, 95, 'Bogan, Herzog and Turcotte', 'North Carolina', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (23, 31, 35, 12, 'Paucek, Anderson and O''Reilly', 'Virginia', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (24, 92, 52, 41, 'Hyatt Inc', 'South Carolina', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (25, 27, 95, 15, 'Berge-Dietrich', 'Pennsylvania', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (26, 48, 16, 56, 'Rohan Inc', 'Hawaii', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (27, 13, 79, 80, 'Schmitt Inc', 'Texas', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (28, 53, 85, 87, 'Rosenbaum and Sons', 'Florida', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (29, 98, 62, 19, 'Kihn and Sons', 'Alaska', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (30, 51, 11, 8, 'Pfeffer, Kassulke and Turner', 'Ohio', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (31, 86, 29, 30, 'Auer Group', 'Florida', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (32, 50, 44, 34, 'Bergnaum, Turcotte and Towne', 'Alabama', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (33, 97, 38, 81, 'McCullough, Fisher and Dare', 'Indiana', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (34, 47, 62, 46, 'Doyle Group', 'North Carolina', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (35, 92, 84, 24, 'Steuber and Sons', 'Arizona', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (36, 49, 92, 8, 'Franecki LLC', 'Missouri', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (37, 11, 85, 96, 'Hoeger-Runolfsson', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (38, 62, 8, 21, 'Blick-Schultz', 'Louisiana', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (39, 71, 35, 35, 'King, Schiller and Dach', 'New York', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (40, 2, 57, 40, 'Upton LLC', 'California', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (41, 29, 49, 39, 'Hyatt, Zieme and Romaguera', 'Florida', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (42, 10, 98, 37, 'Kuhlman LLC', 'Virginia', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (43, 16, 13, 73, 'Terry Inc', 'Florida', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (44, 5, 96, 11, 'Monahan LLC', 'District of Columbia', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (45, 7, 81, 18, 'Walsh LLC', 'Michigan', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (46, 12, 31, 62, 'Mann-Konopelski', 'District of Columbia', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (47, 13, 11, 47, 'Schneider-Simonis', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (48, 64, 79, 20, 'Homenick, Bednar and Kutch', 'New York', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (49, 79, 50, 42, 'Mitchell Inc', 'Michigan', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (50, 30, 14, 93, 'Bogan and Sons', 'Virginia', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (51, 99, 39, 18, 'Miller and Sons', 'Maryland', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (52, 74, 99, 94, 'Rempel Inc', 'Washington', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (53, 38, 95, 70, 'Konopelski-Spencer', 'Alabama', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (54, 50, 38, 28, 'Krajcik Inc', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (55, 15, 47, 25, 'Conn, Luettgen and Lang', 'California', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (56, 70, 76, 28, 'Rohan-Beatty', 'Texas', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (57, 53, 43, 57, 'Maggio-Gibson', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (58, 46, 15, 97, 'Welch, Hagenes and Prosacco', 'Nevada', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (59, 13, 59, 85, 'Hilpert-Moore', 'Arizona', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (60, 41, 90, 16, 'Hahn, Torphy and O''Connell', 'North Carolina', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (61, 31, 36, 17, 'Haag and Sons', 'Washington', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (62, 12, 46, 3, 'Dach, Barrows and Grimes', 'Florida', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (63, 85, 7, 12, 'Ruecker-Ebert', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (64, 37, 69, 80, 'Homenick-Torp', 'California', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (65, 6, 10, 49, 'Barrows LLC', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (66, 32, 84, 18, 'Buckridge LLC', 'Florida', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (67, 80, 49, 28, 'Reynolds-Herzog', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (68, 50, 39, 73, 'Roberts-Weissnat', 'Florida', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (69, 11, 17, 23, 'Waters, Witting and Thompson', 'Virginia', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (70, 63, 21, 42, 'Bergstrom-Zieme', 'California', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (71, 97, 22, 72, 'Zemlak and Sons', 'Virginia', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (72, 62, 40, 39, 'Gutmann-Kulas', 'Georgia', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (73, 11, 20, 61, 'Mertz-Wolf', 'Massachusetts', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (74, 39, 62, 63, 'Hickle, Hackett and Bosco', 'North Carolina', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (75, 84, 55, 80, 'Glover-Leuschke', 'Louisiana', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (76, 70, 43, 42, 'Connelly Group', 'Florida', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (77, 75, 82, 80, 'Deckow, Parisian and Schaefer', 'Illinois', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (78, 51, 74, 91, 'Romaguera-Jakubowski', 'Connecticut', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (79, 50, 14, 54, 'Torp LLC', 'Washington', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (80, 71, 57, 85, 'Goldner-Maggio', 'Massachusetts', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (81, 21, 64, 24, 'Heathcote-Tromp', 'South Carolina', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (82, 17, 50, 12, 'Bartell Group', 'Pennsylvania', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (83, 83, 53, 51, 'Kling-Shanahan', 'California', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (84, 84, 84, 2, 'Heller Inc', 'Connecticut', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (85, 66, 15, 63, 'Predovic, Bosco and Torp', 'New York', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (86, 5, 25, 25, 'Mayer, Windler and Schiller', 'Alabama', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (87, 50, 89, 52, 'Kohler, Wiegand and Metz', 'Kansas', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (88, 72, 73, 97, 'Ullrich and Sons', 'California', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (89, 22, 100, 75, 'Dicki-Wilkinson', 'Washington', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (90, 17, 84, 92, 'Morar Inc', 'New York', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (91, 11, 93, 35, 'Lakin-Romaguera', 'Alabama', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (92, 94, 30, 20, 'Hilll, Jacobson and Boyer', 'Texas', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (93, 27, 89, 88, 'Jacobi, Hagenes and Hagenes', 'Florida', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (94, 37, 65, 4, 'Gleason Inc', 'Ohio', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (95, 8, 46, 99, 'Beatty-Walsh', 'New York', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (96, 52, 91, 45, 'Klein-Schuster', 'Florida', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (97, 89, 52, 94, 'Denesik Inc', 'California', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (98, 50, 88, 58, 'Morar LLC', 'Nevada', true);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (99, 87, 85, 83, 'Bins, Olson and Ziemann', 'Georgia', false);
-INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, state, company_status)
-VALUES (100, 99, 22, 100, 'Hudson-Lowe', 'Florida', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (1, 76, 83, 97, 'Aufderhar Inc', 'Mississippi', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (2, 88, 53, 52, 'Kunde-Stiedemann', 'Florida', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (3, 12, 46, 99, 'Smith and Sons', 'New Jersey', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (4, 16, 73, 7, 'Bernier-Wuckert', 'West Virginia', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (5, 99, 55, 42, 'Zboncak, Sanford and Conroy', 'Kentucky', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (6, 67, 51, 3, 'Wiza Group', 'Maryland', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (7, 38, 97, 12, 'Christiansen, Hyatt and Treutel', 'Utah', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (8, 2, 55, 46, 'Heidenreich, Spencer and Bartell', 'Utah', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (9, 49, 44, 53, 'Grimes-Grimes', 'District of Columbia', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (10, 52, 25, 84, 'Sanford, Schamberger and Pacocha', 'Kansas', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (11, 2, 44, 89, 'Jerde-Purdy', 'Tennessee', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (12, 88, 43, 65, 'Walker, Stracke and Jerde', 'Nevada', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (13, 69, 19, 61, 'Hettinger, Witting and Kub', 'Ohio', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (14, 90, 69, 50, 'Beer-Thompson', 'Texas', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (15, 35, 76, 42, 'McCullough, Dibbert and Ward', 'Florida', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (16, 89, 6, 95, 'Daugherty, Olson and Schimmel', 'District of Columbia', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (17, 53, 76, 71, 'Bartoletti-Heidenreich', 'Florida', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (18, 65, 15, 92, 'Hoeger-Mayert', 'Washington', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (19, 81, 16, 4, 'Tremblay Inc', 'Illinois', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (20, 2, 24, 98, 'Kassulke, Leannon and Wolff', 'California', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (21, 26, 52, 40, 'Crist, Kunze and Prohaska', 'California', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (22, 5, 16, 39, 'Kerluke, Corkery and Beer', 'Texas', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (23, 55, 55, 72, 'Bartoletti, Schneider and Jaskolski', 'Mississippi', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (24, 70, 83, 93, 'Haley and Sons', 'Maryland', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (25, 85, 5, 30, 'Moen, Lesch and Hand', 'Texas', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (26, 15, 6, 59, 'Rutherford-Auer', 'Iowa', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (27, 86, 66, 31, 'Grant, Sanford and Farrell', 'North Carolina', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (28, 53, 73, 18, 'Willms-Mohr', 'Mississippi', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (29, 38, 74, 87, 'Kshlerin, Hyatt and Senger', 'Pennsylvania', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (30, 77, 87, 9, 'Johnston LLC', 'California', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (31, 62, 17, 3, 'Legros Group', 'Missouri', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (32, 5, 24, 85, 'Jast-Davis', 'Texas', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (33, 61, 92, 90, 'Sipes Group', 'Ohio', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (34, 7, 61, 61, 'Skiles-Medhurst', 'California', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (35, 11, 1, 72, 'Hodkiewicz, Koepp and Gutmann', 'Florida', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (36, 7, 97, 61, 'Hirthe-Hane', 'New York', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (37, 95, 46, 57, 'Witting-Lesch', 'California', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (38, 23, 91, 78, 'Yundt Inc', 'Missouri', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (39, 89, 77, 68, 'Leffler, Beer and Thiel', 'Ohio', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (40, 67, 14, 79, 'D''Amore-Fadel', 'District of Columbia', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (41, 9, 27, 92, 'Blick, Schaefer and Jacobson', 'New Jersey', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (42, 27, 75, 69, 'Hills, Bahringer and Larson', 'Colorado', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (43, 57, 23, 63, 'Schmitt, Hand and Lebsack', 'Indiana', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (44, 79, 51, 48, 'Schumm, Crist and Wiegand', 'District of Columbia', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (45, 83, 55, 82, 'Schroeder-Brakus', 'Washington', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (46, 53, 38, 14, 'D''Amore-Rutherford', 'Massachusetts', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (47, 17, 22, 74, 'Maggio, Johnston and Fritsch', 'Ohio', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (48, 94, 46, 68, 'Upton-Dickinson', 'Virginia', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (49, 24, 44, 86, 'Hammes, Wilkinson and Waelchi', 'Michigan', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (50, 55, 91, 60, 'Zboncak LLC', 'Arizona', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (51, 72, 20, 94, 'Gutmann-Friesen', 'California', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (52, 53, 34, 38, 'Conn, Yundt and Mante', 'Iowa', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (53, 100, 93, 18, 'Shields, Ziemann and Braun', 'Michigan', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (54, 29, 78, 60, 'Runte, Schuppe and Bartell', 'Connecticut', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (55, 89, 31, 68, 'Schoen-Keebler', 'California', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (56, 59, 14, 62, 'Mante, Kautzer and Ward', 'Texas', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (57, 26, 9, 37, 'Cartwright-Steuber', 'Ohio', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (58, 27, 78, 48, 'Collier Inc', 'Colorado', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (59, 85, 50, 55, 'Stroman Inc', 'Iowa', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (60, 60, 72, 75, 'Marquardt-Oberbrunner', 'Ohio', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (61, 7, 4, 23, 'Klein Group', 'Michigan', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (62, 73, 32, 27, 'Windler, Bode and Hyatt', 'Texas', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (63, 5, 35, 76, 'Funk, Adams and Von', 'California', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (64, 54, 89, 90, 'Kirlin LLC', 'New York', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (65, 2, 60, 36, 'Treutel Group', 'Connecticut', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (66, 13, 76, 56, 'Cremin-Jenkins', 'Nevada', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (67, 3, 21, 44, 'Cassin-McKenzie', 'Montana', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (68, 20, 10, 71, 'Hane-Beer', 'Utah', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (69, 52, 79, 28, 'Kub and Sons', 'Ohio', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (70, 38, 36, 40, 'Reichel, Cruickshank and Klein', 'New York', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (71, 37, 10, 43, 'Pfannerstill, Ferry and Toy', 'Maryland', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (72, 44, 84, 4, 'Considine and Sons', 'Texas', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (73, 33, 32, 53, 'Bruen-Klein', 'Indiana', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (74, 51, 96, 72, 'Koepp Group', 'Nebraska', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (75, 29, 38, 32, 'Rosenbaum Inc', 'Texas', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (76, 67, 93, 82, 'Jaskolski-Buckridge', 'Alabama', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (77, 97, 62, 36, 'Koch-Dickinson', 'Indiana', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (78, 32, 72, 98, 'Streich Inc', 'Texas', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (79, 25, 2, 34, 'Rempel, Lynch and Stokes', 'Minnesota', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (80, 62, 92, 83, 'Senger, Lubowitz and Grimes', 'Indiana', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (81, 71, 50, 34, 'Ankunding-Parker', 'Oklahoma', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (82, 26, 58, 1, 'Trantow LLC', 'District of Columbia', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (83, 50, 1, 6, 'Bode, Erdman and Berge', 'Texas', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (84, 56, 3, 47, 'Bosco-Parisian', 'Texas', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (85, 4, 95, 33, 'Lind-Von', 'Washington', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (86, 66, 56, 52, 'Labadie Group', 'Utah', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (87, 73, 3, 16, 'Metz-Howe', 'New York', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (88, 53, 33, 72, 'Haag, Sporer and Beahan', 'Texas', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (89, 18, 75, 74, 'Rutherford-Windler', 'Michigan', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (90, 29, 41, 25, 'Russel Inc', 'Alabama', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (91, 66, 98, 29, 'Nolan, Koch and Kiehn', 'North Carolina', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (92, 14, 80, 96, 'Dare-Goodwin', 'Kansas', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (93, 89, 46, 93, 'Fadel Group', 'New York', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (94, 96, 96, 60, 'Larson Inc', 'Oklahoma', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (95, 38, 87, 36, 'Predovic-Willms', 'Illinois', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (96, 98, 64, 22, 'Gleichner, Terry and Koelpin', 'Georgia', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (97, 27, 56, 52, 'Kessler-Buckridge', 'Maryland', true);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (98, 75, 47, 1, 'Kihn, Kuhn and Moen', 'Ohio', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (99, 83, 22, 4, 'Mohr, Stehr and Mayer', 'California', false);
+INSERT INTO Company(company_id, ask_id, industry_id, portfolio_id, company_name, company_state, company_status)
+VALUES (100, 22, 9, 18, 'Schumm Inc', 'Texas', false);
 
 
 
@@ -918,206 +918,207 @@ VALUES (1, 'Aronin', 'Modestia'),
 
 
 
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (8, 5, 3, true, true, '2022-01-29 23:32:49', '2023-02-09 11:06:17');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (9, 99, 6, true, false, '2021-09-03 10:07:47', '2023-02-02 02:54:20');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (10, 91, 5, true, true, '2022-09-07 11:26:08', '2023-03-20 21:12:03');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (11, 77, 10, true, false, '2021-09-14 08:44:05', '2023-02-24 15:30:00');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (1, 85, 7, true, true, '2023-01-18 01:25:44', '2023-02-28 10:34:41');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (2, 62, 7, false, false, '2022-12-08 15:44:33', '2023-03-28 23:59:32');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (3, 7, 1, true, true, '2021-09-06 14:34:17', '2023-03-21 04:10:32');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (4, 42, 0, true, false, '2021-10-28 04:30:27', '2023-03-09 06:06:20');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (5, 57, 4, true, false, '2022-06-23 16:45:04', '2023-02-15 11:03:18');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (6, 65, 2, true, true, '2022-06-26 23:01:04', '2023-03-29 06:03:34');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (7, 15, 9, true, false, '2021-09-17 03:02:30', '2023-03-26 04:13:41');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (12, 16, 3, false, false, '2022-08-08 19:34:52', '2023-03-23 22:42:57');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (13, 86, 6, true, false, '2022-03-21 13:04:53', '2023-03-14 00:08:05');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (14, 49, 2, true, true, '2022-07-10 02:42:36', '2023-02-10 08:30:13');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (15, 62, 3, false, false, '2022-10-31 23:14:53', '2023-03-21 01:13:51');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (16, 42, 1, true, true, '2022-04-20 10:24:04', '2023-03-14 16:59:31');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (17, 65, 7, true, true, '2021-09-02 18:46:25', '2023-02-08 15:14:38');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (18, 9, 1, false, true, '2022-11-20 21:32:55', '2023-02-09 06:32:48');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (19, 66, 6, true, true, '2021-09-29 15:16:25', '2023-02-12 06:48:04');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (20, 14, 1, true, false, '2022-04-02 06:32:02', '2023-03-05 00:12:08');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (21, 43, 1, true, true, '2022-05-24 22:28:12', '2023-02-06 00:36:18');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (22, 30, 4, true, false, '2022-11-14 18:33:45', '2023-02-20 05:00:07');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (23, 60, 2, true, false, '2022-10-08 11:02:23', '2023-02-27 07:07:33');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (24, 35, 6, true, true, '2021-10-01 13:09:39', '2023-02-27 21:55:40');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (25, 40, 5, false, false, '2022-08-09 01:33:38', '2023-02-06 04:00:38');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (26, 22, 10, true, true, '2022-07-10 08:39:25', '2023-03-25 23:44:26');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (27, 33, 10, false, true, '2022-11-17 21:22:30', '2023-03-09 18:55:45');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (28, 72, 1, false, false, '2022-05-19 19:15:22', '2023-03-11 22:19:36');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (29, 16, 4, false, false, '2022-07-02 20:36:30', '2023-03-24 17:40:54');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (30, 12, 5, false, false, '2021-12-28 07:01:56', '2023-03-01 15:05:42');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (31, 84, 10, false, false, '2021-11-09 21:05:58', '2023-03-19 22:19:17');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (32, 76, 2, true, false, '2022-08-08 20:00:28', '2023-02-07 18:58:51');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (33, 73, 3, false, true, '2022-04-20 00:12:06', '2023-03-03 07:48:11');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (34, 44, 3, false, false, '2021-09-04 23:53:24', '2023-02-23 06:10:12');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (35, 85, 6, false, false, '2022-01-14 20:02:50', '2023-02-09 03:55:39');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (36, 77, 2, false, false, '2021-09-26 07:56:46', '2023-02-09 03:06:46');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (37, 10, 4, true, true, '2022-10-23 16:57:41', '2023-03-03 13:07:32');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (38, 39, 2, true, true, '2021-08-20 19:48:02', '2023-03-10 23:06:16');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (39, 64, 5, false, true, '2023-01-15 14:43:20', '2023-02-06 21:35:44');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (40, 53, 5, false, true, '2021-12-31 23:09:29', '2023-03-20 14:15:16');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (41, 56, 2, true, false, '2022-09-06 05:17:47', '2023-04-01 20:46:27');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (42, 46, 2, true, true, '2022-03-10 08:32:13', '2023-02-25 20:46:45');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (43, 8, 8, false, true, '2022-09-25 15:08:40', '2023-03-05 07:08:09');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (44, 86, 1, true, false, '2022-01-06 07:21:23', '2023-03-30 23:55:11');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (45, 95, 9, false, false, '2021-08-28 18:47:04', '2023-02-23 18:45:21');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (46, 10, 4, false, false, '2022-09-03 09:59:45', '2023-03-30 20:27:12');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (47, 65, 10, false, false, '2022-07-09 06:34:15', '2023-02-17 18:48:37');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (48, 11, 8, false, true, '2022-03-23 13:11:17', '2023-03-10 20:46:22');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (49, 83, 2, false, false, '2022-08-07 13:37:15', '2023-03-30 18:11:14');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (50, 12, 10, false, true, '2022-06-08 03:48:49', '2023-02-24 09:43:01');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (51, 15, 10, true, false, '2022-11-28 22:13:19', '2023-03-01 22:26:26');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (52, 22, 1, true, false, '2022-04-01 10:47:59', '2023-03-25 17:06:57');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (53, 96, 7, false, true, '2021-10-13 20:14:14', '2023-03-25 09:56:32');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (54, 50, 9, true, false, '2021-10-04 10:29:06', '2023-03-19 12:07:04');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (55, 53, 2, true, false, '2022-02-23 11:44:08', '2023-03-03 07:03:33');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (56, 95, 8, true, true, '2021-11-27 17:32:27', '2023-04-01 18:46:04');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (57, 26, 1, false, false, '2022-07-17 05:49:30', '2023-02-06 15:15:06');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (58, 96, 7, false, false, '2021-10-03 20:45:51', '2023-03-15 02:17:02');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (59, 19, 2, true, true, '2022-08-09 20:16:25', '2023-03-14 08:31:10');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (60, 80, 8, false, true, '2022-01-02 06:17:58', '2023-02-08 14:26:50');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (61, 25, 3, true, true, '2022-02-16 11:19:08', '2023-03-17 00:33:32');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (62, 56, 2, false, true, '2022-07-03 21:58:43', '2023-02-12 14:51:16');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (63, 46, 10, true, false, '2022-03-09 12:32:33', '2023-04-03 21:51:50');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (64, 72, 6, true, false, '2021-07-25 05:28:22', '2023-03-10 21:45:05');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (65, 1, 7, true, true, '2022-03-14 11:14:29', '2023-03-05 12:57:52');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (66, 58, 2, true, false, '2022-02-17 12:50:02', '2023-02-05 22:15:13');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (67, 61, 4, false, false, '2022-06-24 12:11:01', '2023-03-11 01:47:16');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (68, 45, 10, true, false, '2021-07-17 11:52:13', '2023-03-21 14:15:57');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (69, 29, 7, true, true, '2022-09-16 00:01:07', '2023-02-06 01:14:58');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (70, 10, 10, true, false, '2022-07-18 04:17:36', '2023-03-22 08:28:06');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (71, 56, 6, false, false, '2022-07-04 14:17:49', '2023-02-21 04:58:39');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (72, 7, 3, false, false, '2022-11-23 23:39:59', '2023-02-23 23:46:13');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (73, 77, 5, false, false, '2022-08-18 16:06:07', '2023-04-03 20:48:46');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (74, 33, 2, true, false, '2022-09-10 09:38:14', '2023-02-19 18:41:13');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (75, 43, 2, false, true, '2022-08-10 07:05:16', '2023-02-07 14:08:11');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (76, 57, 8, true, false, '2021-10-04 11:49:42', '2023-03-31 23:46:41');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (77, 79, 9, true, false, '2022-11-26 23:46:00', '2023-02-04 14:10:25');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (78, 86, 2, true, false, '2021-10-10 20:16:49', '2023-02-11 08:33:00');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (79, 36, 7, false, false, '2022-09-04 00:42:38', '2023-02-26 07:40:38');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (80, 58, 1, false, true, '2022-02-20 07:19:59', '2023-02-24 19:31:04');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (81, 82, 10, true, false, '2022-02-23 20:24:18', '2023-03-03 03:12:52');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (82, 46, 7, true, true, '2021-11-10 19:00:16', '2023-03-27 13:11:41');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (83, 73, 5, true, false, '2021-09-30 20:31:30', '2023-02-09 11:48:49');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (84, 99, 3, true, true, '2022-06-23 12:52:57', '2023-02-11 13:29:56');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (85, 40, 7, false, false, '2022-06-01 22:35:07', '2023-03-30 13:40:57');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (86, 50, 3, true, false, '2022-12-09 22:42:54', '2023-03-01 11:25:04');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (87, 26, 5, false, false, '2022-12-10 02:28:36', '2023-03-28 23:49:48');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (88, 66, 6, true, true, '2022-12-29 20:50:34', '2023-02-19 19:11:32');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (89, 80, 7, false, false, '2022-08-20 23:28:52', '2023-03-29 22:11:33');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (90, 40, 8, false, false, '2022-11-05 17:11:46', '2023-03-11 04:02:50');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (91, 2, 3, false, true, '2022-01-20 17:06:29', '2023-04-02 13:16:13');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (92, 11, 2, true, false, '2022-04-15 14:36:22', '2023-02-08 23:22:23');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (93, 5, 4, false, true, '2021-07-07 01:17:46', '2023-02-22 23:13:45');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (94, 37, 2, false, true, '2022-03-31 16:18:21', '2023-03-24 09:40:08');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (95, 40, 5, true, false, '2021-07-30 20:31:41', '2023-02-03 23:59:56');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (96, 43, 3, false, false, '2022-08-20 17:14:18', '2023-04-01 21:41:20');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (97, 79, 9, false, true, '2022-01-27 10:59:12', '2023-03-30 16:50:04');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (98, 59, 9, false, true, '2021-07-12 14:33:02', '2023-02-11 09:08:18');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (99, 23, 10, false, true, '2021-10-04 10:31:20', '2023-03-30 20:05:09');
-INSERT INTO Deal(deal_id, ask_id, feasibility, top_5, deal_status, start_date, approval_date)
-VALUES (100, 11, 8, true, true, '2022-06-13 01:42:45', '2023-02-21 20:48:43');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (1, 82, 9, false, true, '2021-10-27 12:43:55', '2023-03-19 05:36:13');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (2, 9, 9, false, true, '2022-05-17 14:18:53', '2023-02-14 08:54:58');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (3, 51, 4, false, true, '2021-07-25 03:49:06', '2023-02-24 19:34:52');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (4, 90, 2, true, true, '2021-10-05 02:44:54', '2023-02-15 14:44:30');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (5, 48, 7, true, false, '2022-01-25 21:19:22', '2023-03-06 01:37:39');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (6, 58, 5, false, true, '2022-09-15 22:30:48', '2023-03-09 06:31:11');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (7, 85, 0, true, false, '2021-08-25 00:25:42', '2023-02-15 01:48:24');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (8, 62, 8, false, true, '2022-12-30 12:02:14', '2023-02-14 03:14:45');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (9, 76, 6, false, true, '2022-06-26 12:30:52', '2023-02-08 10:24:23');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (10, 23, 3, false, true, '2022-09-29 06:41:06', '2023-03-22 08:23:44');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (11, 98, 1, true, true, '2022-02-04 20:27:42', '2023-02-12 01:41:04');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (12, 75, 10, false, true, '2022-04-12 08:26:34', '2023-04-04 07:07:01');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (13, 43, 1, false, true, '2022-09-11 10:08:15', '2023-03-06 19:05:03');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (14, 3, 7, true, true, '2022-12-20 13:30:29', '2023-02-19 13:37:50');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (15, 4, 8, false, true, '2022-04-16 21:50:42', '2023-03-18 18:40:11');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (16, 33, 8, false, false, '2022-02-28 22:07:46', '2023-02-22 23:50:35');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (17, 88, 6, true, true, '2021-10-18 07:45:54', '2023-02-28 15:35:36');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (18, 72, 8, false, false, '2022-09-04 16:09:57', '2023-03-14 05:45:19');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (19, 57, 0, false, false, '2021-09-02 12:37:49', '2023-02-05 20:48:17');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (20, 100, 10, false, false, '2022-03-15 08:45:19', '2023-02-04 23:21:58');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (21, 68, 7, true, true, '2022-09-12 04:54:45', '2023-02-28 12:37:26');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (22, 48, 5, false, true, '2021-10-04 08:12:38', '2023-03-13 19:53:22');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (23, 88, 10, true, true, '2022-08-07 04:40:50', '2023-02-17 11:14:22');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (24, 99, 5, true, false, '2021-12-14 07:14:58', '2023-03-13 02:43:30');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (25, 30, 3, false, false, '2021-12-08 23:38:19', '2023-02-15 14:19:29');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (26, 16, 5, false, true, '2021-12-16 05:34:03', '2023-03-05 05:04:23');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (27, 70, 3, true, false, '2021-07-12 10:17:53', '2023-02-14 06:56:50');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (28, 99, 3, false, false, '2023-01-25 19:50:59', '2023-02-27 13:24:29');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (29, 8, 5, true, true, '2022-06-22 22:27:35', '2023-03-30 01:58:10');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (30, 36, 3, false, false, '2021-11-02 08:53:09', '2023-03-12 21:25:54');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (31, 14, 5, false, true, '2021-07-27 10:31:52', '2023-03-15 21:39:53');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (32, 7, 2, false, false, '2022-04-30 21:15:35', '2023-03-01 23:51:18');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (33, 97, 1, false, true, '2023-01-31 13:46:43', '2023-03-08 02:50:24');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (34, 38, 0, true, false, '2022-07-02 23:58:28', '2023-02-17 17:04:44');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (35, 99, 9, false, false, '2023-01-05 06:42:40', '2023-03-11 23:23:37');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (36, 40, 7, true, false, '2022-01-27 20:49:52', '2023-04-03 14:06:51');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (37, 94, 8, true, true, '2022-03-05 08:59:08', '2023-03-14 09:32:23');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (38, 31, 2, false, true, '2022-04-29 14:59:18', '2023-02-11 05:54:45');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (39, 70, 8, true, true, '2021-07-08 23:40:50', '2023-04-01 03:18:45');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (40, 95, 0, true, false, '2022-11-26 04:56:17', '2023-03-07 17:45:24');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (41, 47, 4, false, true, '2022-08-01 06:52:56', '2023-02-27 06:47:57');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (42, 78, 6, false, false, '2022-02-08 07:32:35', '2023-03-23 03:13:28');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (43, 14, 8, false, false, '2022-11-19 09:53:37', '2023-02-06 07:40:15');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (44, 84, 9, true, true, '2021-12-16 00:33:39', '2023-02-27 13:00:23');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (45, 12, 8, false, true, '2022-01-15 07:30:36', '2023-02-16 23:58:22');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (46, 67, 3, true, true, '2022-03-14 04:15:30', '2023-02-13 03:29:39');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (47, 91, 6, false, true, '2021-11-08 18:44:35', '2023-04-02 04:07:43');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (48, 53, 8, false, false, '2022-03-05 13:33:54', '2023-02-07 02:08:07');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (49, 13, 2, true, false, '2022-10-05 00:12:20', '2023-02-13 21:59:34');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (50, 38, 1, false, false, '2021-12-29 13:05:35', '2023-03-20 08:37:35');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (51, 98, 5, false, true, '2021-12-23 15:47:04', '2023-02-18 13:54:21');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (52, 78, 10, false, false, '2021-09-24 01:40:36', '2023-02-03 20:23:01');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (53, 41, 6, false, false, '2021-07-12 03:32:42', '2023-03-01 16:33:17');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (54, 90, 8, false, false, '2022-10-18 20:19:18', '2023-03-21 11:44:12');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (55, 43, 5, true, false, '2022-10-06 08:17:16', '2023-02-08 09:04:02');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (56, 41, 9, true, true, '2022-08-09 11:10:54', '2023-02-22 13:51:09');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (57, 20, 6, false, true, '2022-08-26 06:16:44', '2023-03-08 02:56:03');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (58, 79, 9, true, false, '2022-11-03 17:20:05', '2023-02-03 22:22:38');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (59, 11, 3, false, true, '2021-10-18 00:11:18', '2023-03-06 06:27:43');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (60, 19, 8, false, false, '2022-05-13 12:45:37', '2023-03-24 11:23:39');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (61, 33, 4, false, false, '2021-12-16 14:45:41', '2023-03-08 16:57:56');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (62, 32, 4, false, true, '2021-12-25 13:20:01', '2023-02-11 15:09:09');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (63, 27, 4, true, false, '2022-10-11 18:49:56', '2023-03-03 05:39:16');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (64, 78, 2, true, true, '2022-10-15 03:10:34', '2023-02-24 05:44:06');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (65, 40, 6, true, false, '2022-07-01 15:38:01', '2023-02-12 07:21:41');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (66, 100, 0, true, false, '2022-08-14 09:52:23', '2023-03-12 06:00:39');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (67, 20, 2, false, true, '2021-11-26 14:11:56', '2023-03-27 11:09:49');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (68, 53, 6, false, true, '2021-09-16 13:37:43', '2023-03-23 13:28:01');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (69, 92, 9, true, true, '2022-01-09 06:18:49', '2023-02-03 22:04:57');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (70, 64, 5, true, false, '2021-08-21 22:50:58', '2023-02-05 08:07:20');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (71, 18, 6, true, false, '2021-10-16 08:40:28', '2023-03-02 16:47:49');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (72, 73, 4, false, false, '2023-01-20 14:53:07', '2023-02-19 07:07:55');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (73, 79, 3, false, false, '2021-07-14 02:35:42', '2023-03-20 09:16:16');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (74, 24, 2, false, false, '2022-04-25 01:45:13', '2023-03-29 09:16:01');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (75, 22, 4, false, true, '2021-10-20 15:02:36', '2023-03-25 21:31:58');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (76, 41, 9, false, true, '2021-10-04 03:12:14', '2023-03-10 20:28:39');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (77, 49, 9, false, true, '2022-10-20 20:45:21', '2023-02-09 23:45:33');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (78, 72, 4, true, false, '2022-05-18 19:26:31', '2023-02-23 12:38:31');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (79, 8, 6, false, true, '2022-04-08 22:12:50', '2023-03-12 17:30:52');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (80, 38, 0, true, false, '2021-07-10 10:39:43', '2023-02-19 17:20:37');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (81, 20, 6, false, true, '2022-06-21 19:47:49', '2023-03-29 13:06:54');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (82, 97, 6, false, true, '2022-12-25 03:53:09', '2023-03-03 18:56:48');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (83, 23, 7, true, false, '2021-07-07 21:29:16', '2023-03-12 01:43:21');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (84, 7, 4, true, false, '2021-07-20 04:22:08', '2023-02-16 02:00:01');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (85, 44, 3, false, false, '2022-01-16 09:33:44', '2023-03-05 19:34:21');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (86, 67, 6, false, true, '2021-10-24 03:19:20', '2023-03-04 10:35:48');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (87, 30, 0, true, false, '2021-07-26 02:32:52', '2023-04-04 10:54:09');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (88, 62, 10, false, true, '2022-12-06 11:46:46', '2023-02-07 14:40:22');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (89, 58, 7, true, true, '2021-08-16 21:29:51', '2023-03-03 12:26:14');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (90, 78, 6, false, false, '2022-01-03 20:36:29', '2023-02-12 12:03:05');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (91, 16, 3, false, true, '2022-11-20 05:34:00', '2023-02-28 06:38:43');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (92, 64, 1, true, true, '2022-06-10 13:17:30', '2023-02-20 06:52:56');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (93, 47, 6, true, true, '2021-11-04 06:52:21', '2023-04-03 17:57:54');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (94, 14, 5, false, false, '2022-04-19 17:27:48', '2023-02-06 23:48:11');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (95, 86, 1, false, false, '2022-07-24 00:57:51', '2023-03-20 04:24:32');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (96, 32, 6, false, true, '2022-12-24 09:48:24', '2023-02-04 19:27:26');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (97, 58, 3, false, false, '2022-03-03 14:33:28', '2023-03-11 15:09:51');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (98, 62, 10, false, false, '2022-09-05 10:57:19', '2023-03-26 05:03:57');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (99, 66, 2, false, false, '2022-03-29 10:00:07', '2023-02-04 18:51:06');
+INSERT INTO Deal(deal_id, ask_id, feasibility, top5, deal_status, deal_start_date, approval_date)
+VALUES (100, 96, 1, false, false, '2022-03-26 04:10:39', '2023-03-14 23:15:48');
+
 
 INSERT INTO Bid(bid_id, pe_id, deal_id, bid_range, bid_price, bid_status)
 VALUES (1, 80, 30, 0.68, 43453376, false);
