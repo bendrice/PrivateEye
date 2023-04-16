@@ -12,7 +12,7 @@ def add_company():
     current_app.logger.info(the_data)
     name = the_data['company_name']
     state = the_data['company_state']
-    query = 'insert into Company (company_name, company_state) values("'
+    query = 'insert into Company (company_name, company_state, company_status) values("'
     query += name + '", "'
     query += state + '", 0)'
     current_app.logger.info(query)
@@ -21,17 +21,45 @@ def add_company():
     db.get_db().commit()
     return 'Success'
 
+# Adds company details
+@private_companies.route('/company_details', methods=['POST'])
+def add_company_details():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    name = the_data['name']
+    margins = the_data['margins']
+    revenue = the_data['revenue']
+    ceo = the_data['ceo']
+    cto = the_data['cto']
+    cio = the_data['cio']
+    query = 'INSERT INTO Company_Details (company_id, margins, revenue, ceo, cto, cio) '
+    query += 'VALUES ((SELECT company_id FROM Company WHERE company_name = "' + name + '"), '
+    query += str(margins) + ', '
+    query += str(revenue) + ', '
+    query += '"' + ceo + '", '
+    query += '"' + cto + '", '
+    query += '"' + cio + '")'
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
+
+
 # Gets PE firms
 @private_companies.route('/pefirm', methods=['GET'])
 def get_pe_firms():
-   cursor = db.get_db().cursor()
-   cursor.execute('select pe_name, pe_state, aum from PE_Firm')
-   row_headers = [x[0] for x in cursor.description]
-   json_data = []
-   theData = cursor.fetchall()
-   for row in theData:
-     json_data.append(dict(zip(row_headers, row)))
-     the_response = make_response(jsonify(json_data))
-     the_response.status_code = 200
-     the_response.mimetype = 'application/json'
-     return the_response
+    cursor = db.get_db().cursor()
+    cursor.execute('select pe_name, pe_state, aum from PE_Firm')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+
