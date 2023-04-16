@@ -14,7 +14,7 @@ def add_company():
     state = the_data['company_state']
     query = 'insert into Company (company_name, company_state) values("'
     query += name + '", "'
-    query += state + '")'
+    query += state + '", 0)'
     current_app.logger.info(query)
     cursor = db.get_db().cursor()
     cursor.execute(query)

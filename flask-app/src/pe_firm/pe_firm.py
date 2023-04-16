@@ -1,11 +1,11 @@
-from flask import Blueprint, request, jsonify, make_response
+from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-pe_companies = Blueprint('pe_companies', __name__)
+pe_firms = Blueprint('pe_firms', __name__)
 
 # Gets all the private companies and their information
-@pe_companies.route('/pe_companies', methods=['GET'])
+@pe_firms.route('/private_company', methods=['GET'])
 def get_private_companies():
     # get a cursor object from the database
     cursor = db.get_db().cursor()
