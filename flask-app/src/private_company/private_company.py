@@ -26,14 +26,14 @@ def add_company():
 def add_company_details():
     the_data = request.json
     current_app.logger.info(the_data)
-    name = the_data['name']
+    co_name = the_data['co_name']
     margins = the_data['margins']
     revenue = the_data['revenue']
     ceo = the_data['ceo']
     cto = the_data['cto']
     cio = the_data['cio']
     query = 'INSERT INTO Company_Details (company_id, margins, revenue, ceo, cto, cio) '
-    query += 'VALUES ((SELECT company_id FROM Company WHERE company_name = "' + name + '"), '
+    query += 'VALUES ((SELECT company_id FROM Company WHERE company_name = "' + co_name + '"), '
     query += str(margins) + ', '
     query += str(revenue) + ', '
     query += '"' + ceo + '", '
