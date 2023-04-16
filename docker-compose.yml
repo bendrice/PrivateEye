@@ -19,7 +19,7 @@ services:
 
     # map host port 8001 to container port 4000 (see the EXPOSE command in api/Dockerfile)
     ports:
-      - "8002:4001"
+      - "8001:4000"
 
     links:
       - db

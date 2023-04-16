@@ -3,34 +3,34 @@ CREATE DATABASE PrivateEyeDB;
 USE PrivateEyeDB;
 
 CREATE TABLE PE_Firm (
-    pe_id    int PRIMARY KEY NOT NULL,
+    pe_id    int PRIMARY KEY AUTO_INCREMENT NOT NULL,
     pe_name  varchar(50)     NOT NULL,
     pe_state varchar(50)     NOT NULL,
     aum      int             NOT NULL
 );
 
 CREATE TABLE Portfolio (
-    portfolio_id int PRIMARY KEY NOT NULL,
+    portfolio_id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
     pe_id        int             NOT NULL,
     fund         float           NOT NULL,
     CONSTRAINT fk_1 FOREIGN KEY (pe_id) REFERENCES PE_Firm (pe_id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE Industry (
-    industry_id   int PRIMARY KEY,
+    industry_id   int PRIMARY KEY AUTO_INCREMENT NOT NULL,
     size          float         NOT NULL,
     industry_name varchar(1000) NOT NULL
 );
 
 CREATE TABLE Ask (
-    ask_id     Integer PRIMARY KEY,
+    ask_id     Integer PRIMARY KEY AUTO_INCREMENT NOT NULL,
     ask_range  float   NOT NULL,
     ask_price  float   NOT NULL,
     ask_status boolean NOT NULL
 );
 
 CREATE TABLE Company (
-    company_id     int PRIMARY KEY    NOT NULL,
+    company_id     int PRIMARY KEY  AUTO_INCREMENT  NOT NULL,
     ask_id         int                NOT NULL,
     industry_id    int                NOT NULL,
     portfolio_id   int,
@@ -43,7 +43,7 @@ CREATE TABLE Company (
 );
 
 CREATE TABLE Company_Details (
-    cd_id      int PRIMARY KEY NOT NULL,
+    cd_id      int PRIMARY KEY AUTO_INCREMENT NOT NULL,
     company_id int             NOT NULL,
     margins    float           NOT NULL,
     revenue    int             NOT NULL,
@@ -56,13 +56,13 @@ CREATE TABLE Company_Details (
 
 
 CREATE TABLE Technician (
-    technician_id    int PRIMARY KEY,
+    technician_id    int PRIMARY KEY AUTO_INCREMENT NOT NULL,
     technician_last  varchar(50) NOT NULL,
     technician_first varchar(50) NOT NULL
 );
 
 CREATE TABLE Deal (
-    deal_id         int PRIMARY KEY,
+    deal_id         int PRIMARY KEY AUTO_INCREMENT,
     ask_id          int      NOT NULL,
     feasibility     int      NOT NULL,
     top_5           BOOLEAN  NOT NULL,
@@ -76,7 +76,7 @@ CREATE TABLE Deal (
 
 
 CREATE TABLE Bid (
-    bid_id     Integer PRIMARY KEY,
+    bid_id     Integer PRIMARY KEY AUTO_INCREMENT,
     pe_id      int     NOT NULL,
     deal_id    int     NOT NULL,
     bid_range  float   NOT NULL,
