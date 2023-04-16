@@ -67,8 +67,6 @@ CREATE TABLE Deal (
     feasibility     int      NOT NULL,
     top_5           BOOLEAN  NOT NULL,
     deal_status     BOOLEAN  NOT NULL,
-    deal_start_date DATETIME NOT NULL,
-    approval_date   DATETIME NOT NULL,
     CONSTRAINT fk_5 FOREIGN KEY (ask_id) REFERENCES
         Ask (ask_id) ON UPDATE CASCADE ON DELETE RESTRICT,
     CONSTRAINT feasibility_check CHECK (feasibility BETWEEN 0 AND 10)
