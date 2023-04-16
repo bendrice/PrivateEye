@@ -42,8 +42,6 @@ def create_app():
     app.register_blueprint(products,    url_prefix='/p')
     app.register_blueprint(technician, url_prefix='/t')
     app.register_blueprint(private_company, url_prefix='/pc')
-    
-
-
+    app.register_blueprint(pe_companies, url_prefix='/pe')
 
     return app
