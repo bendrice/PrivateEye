@@ -3,4 +3,4 @@ import json
 from src import db
 
 
-p_companies = Blueprint('p_companies', __name__)
+private_companies = Blueprint('private_companies', __name__)
