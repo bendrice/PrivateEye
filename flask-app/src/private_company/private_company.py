@@ -63,3 +63,35 @@ def get_pe_firms():
     return the_response
 
 
+# Makes ask
+@private_companies.route('/ask', methods=['POST'])
+def make_ask():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    ask_range = the_data['ask_range']
+    initial_ask_price = the_data['initial_ask_price']
+    query = 'insert into Ask (ask_range, ask_price, ask_status) values("'
+    query += str(ask_range) + '", "'
+    query += str(initial_ask_price) + '", 1)'
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
+# Updates ask
+@private_companies.route('/update_ask', methods=['PUT'])
+def update_ask():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    co_name = the_data['co_name']
+    updated_ask_price = the_data['updated_ask_price']
+    query = 'UPDATE Ask SET ask_price = '
+    query += str(updated_ask_price) + ' WHERE ask_id = (SELECT ask_id FROM Company WHERE company_name = "'  + co_name + '")'
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
+
