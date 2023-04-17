@@ -206,5 +206,161 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "62da455c-9347-4428-8ac2-984f66f46f23",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "add new technician ",
+    "url": "localhost:8001/t/technician",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-17T22:50:30.186Z",
+    "modified": "2023-04-17T22:54:22.067Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"last_name\": \"Ben\",\n  \"first_name\": \"Rice\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "90a9d362-7056-4139-a4a8-7376c0e88a33",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "Delete company ",
+    "url": "localhost:8001/t/company",
+    "method": "DELETE",
+    "sortNum": 20000,
+    "created": "2023-04-17T22:58:51.874Z",
+    "modified": "2023-04-17T23:00:54.898Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"company_id\": 101\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "21d32867-17ad-4a83-a83d-70a9c4ecf515",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "update company status ",
+    "url": "localhost:8001/t/company",
+    "method": "PUT",
+    "sortNum": 50000,
+    "created": "2023-04-17T23:02:44.978Z",
+    "modified": "2023-04-17T23:04:13.829Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"company_name\": \"Murko\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9a5c4f12-d078-4336-9fb8-edb024577395",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "Get particular company information ",
+    "url": "localhost:8001/t/company/103",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2023-04-17T23:05:28.756Z",
+    "modified": "2023-04-17T23:06:06.672Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "6bf6b79f-38aa-495e-af54-abf8a9820044",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "Update deal feasibility",
+    "url": "localhost:8001/t/deal",
+    "method": "PUT",
+    "sortNum": 70000,
+    "created": "2023-04-17T23:06:28.268Z",
+    "modified": "2023-04-17T23:08:12.877Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"deal_id\": 5,\n  \"score\": 10\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "d4025585-795a-4c40-9d24-d84a67595ae6",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "update top 5 deals",
+    "url": "localhost:8001/t/top_5",
+    "method": "PUT",
+    "sortNum": 80000,
+    "created": "2023-04-17T23:17:06.478Z",
+    "modified": "2023-04-17T23:28:37.494Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"d_id\": 20\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "cf07902a-9628-4b2c-a7af-50fbdbe52a30",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "get top 5 landing page ",
+    "url": "localhost:8001/t/top_5",
+    "method": "GET",
+    "sortNum": 90000,
+    "created": "2023-04-17T23:29:26.122Z",
+    "modified": "2023-04-17T23:29:37.828Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "43a0f82b-2a23-4ee4-9f0f-f0b407a3f1c5",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "get technician id",
+    "url": "localhost:8001/t/technician",
+    "method": "GET",
+    "sortNum": 100000,
+    "created": "2023-04-17T23:42:57.091Z",
+    "modified": "2023-04-17T23:48:46.697Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e0897684-91d4-44b2-afc1-335f78d2e548",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "Make company visible",
+    "url": "localhost:8001/t/company",
+    "method": "POST",
+    "sortNum": 110000,
+    "created": "2023-04-17T23:55:28.140Z",
+    "modified": "2023-04-17T23:57:00.872Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"tech_id\": 334,\n  \"company_id1\": 92\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

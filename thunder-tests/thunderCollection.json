@@ -19,5 +19,12 @@
     "created": "2023-04-17T19:38:56.471Z",
     "sortNum": 30000,
     "folders": []
+  },
+  {
+    "_id": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "colName": "Technician",
+    "created": "2023-04-17T22:50:17.910Z",
+    "sortNum": 40000,
+    "folders": []
   }
 ]
