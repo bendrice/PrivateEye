@@ -69,5 +69,38 @@ def update_deal_feasibility():
     return 'Success'
 
 
+#LANDING PAGE ROUTES edittable by technician 
 
 
+#Update top 5 Deals
+@technicians.route('/top_5', methods=['PUT'])
+def update_top_5():
+    the_data = request.json
+    deal_id = the_data['deal_id']
+    current_app.logger.info(the_data)
+    query = 'UPDATE Deal SET top_5 = 1  WHERE deal_id = ' + str(deal_id) 
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
+
+# Populates the Top 5 deals landing page
+@technicians.route('/top_5_page', methods=['GET'])
+def top_5_page():
+    cursor = db.get_db().cursor()
+    cursor.execute('SELECT pe_name, ask_price, bid_price, feasibility, '
+               +'company_name from PE_Firm join Bid B on PE_Firm.pe_id = B.pe_id '+
+               'join Deal D on B.deal_id = D.deal_id join Ask A on D.ask_id = A.ask_id '+
+               'join Company C on A.ask_id = C.ask_id limit 5')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+ 
