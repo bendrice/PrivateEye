@@ -76,9 +76,9 @@ def update_deal_feasibility():
 @technicians.route('/top_5', methods=['PUT'])
 def update_top_5():
     the_data = request.json
-    deal_id = the_data['deal_id']
+    d_id = the_data['d_id']
     current_app.logger.info(the_data)
-    query = 'UPDATE Deal SET top_5 = 1  WHERE deal_id = ' + str(deal_id) 
+    query = 'UPDATE Deal SET top_5 = 1  WHERE deal_id = ' + str(d_id) 
     current_app.logger.info(query)
     cursor = db.get_db().cursor()
     cursor.execute(query)
