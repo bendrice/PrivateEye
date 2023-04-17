@@ -106,11 +106,24 @@ def update_ask():
     db.get_db().commit()
     return 'Success'
 
-
-@private_companies.route('/industry', methods=['GET'])
-def get_industry():
+# Deletes ask
+@private_companies.route('/delete_ask', methods=['DELETE'])
+def delete_ask():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    companys_name = the_data['companys_name']
+    query = 'DELETE FROM Ask WHERE ask_id = (SELECT ask_id FROM Company WHERE company_name = "'  + companys_name + '")'
+    current_app.logger.info(query)
     cursor = db.get_db().cursor()
-    cursor.execute('select DISTINCT industry_name from Industry')
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
+# Browse bids
+@private_companies.route('/get_bids', methods=['GET'])
+def get_bids():
+    cursor = db.get_db().cursor()
+    cursor.execute('select PF.pe_id, pe_name, pe_state,aum, bid_price from Bid join PE_Firm PF on Bid.pe_id = PF.pe_id')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
@@ -120,3 +133,19 @@ def get_industry():
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
     return the_response
+
+
+# Accept/Reject Bid
+@private_companies.route('/update_bid_status', methods=['PUT'])
+def update_bid_status():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    pe_id = the_data['pe_id']
+    status = the_data['status']
+    query = 'UPDATE Bid SET bid_status = '
+    query += str(status) + ' WHERE pe_id = '  + str(pe_id)
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'

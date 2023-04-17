@@ -141,11 +141,70 @@
     "colId": "376f5213-3eac-4a87-8100-68e74633ab22",
     "containerId": "",
     "name": "Add company details ",
-    "url": "",
-    "method": "GET",
+    "url": "localhost:8001/pc/company_details",
+    "method": "POST",
     "sortNum": 50000,
     "created": "2023-04-17T21:40:32.827Z",
-    "modified": "2023-04-17T21:40:32.827Z",
-    "headers": []
+    "modified": "2023-04-17T21:53:20.800Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"co_name\":\"Startrek\",\n  \"margins\": 27.3,\n  \"revenue\": 2876376.37, \n  \"ceo\": \"Sean\",\n  \"cto\": \"Gavitron\",\n  \"cio\": \"Devanshi\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "160db05f-f539-410e-a21a-6e5a4853d34d",
+    "colId": "376f5213-3eac-4a87-8100-68e74633ab22",
+    "containerId": "",
+    "name": "Delete ask",
+    "url": "localhost:8001/pc/delete_ask",
+    "method": "DELETE",
+    "sortNum": 60000,
+    "created": "2023-04-17T22:05:34.770Z",
+    "modified": "2023-04-17T22:06:48.733Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"companys_name\": \"Startrek\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "d21df569-cc7f-444c-b743-f0ccc0f626aa",
+    "colId": "376f5213-3eac-4a87-8100-68e74633ab22",
+    "containerId": "",
+    "name": "get bids",
+    "url": "localhost:8001/pc/get_bids",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2023-04-17T22:27:51.227Z",
+    "modified": "2023-04-17T22:28:14.022Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "5035d824-040f-4954-b4f3-3507fd1c67f5",
+    "colId": "376f5213-3eac-4a87-8100-68e74633ab22",
+    "containerId": "",
+    "name": "accept/reject bid",
+    "url": "localhost:8001/pc/update_bid_status",
+    "method": "PUT",
+    "sortNum": 80000,
+    "created": "2023-04-17T22:32:23.934Z",
+    "modified": "2023-04-17T22:33:30.007Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"pe_id\": 80, \n  \"status\": 1\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
