@@ -5,5 +5,19 @@
     "created": "2023-03-29T12:08:58.256Z",
     "sortNum": 10000,
     "folders": []
+  },
+  {
+    "_id": "376f5213-3eac-4a87-8100-68e74633ab22",
+    "colName": "Private company",
+    "created": "2023-04-17T19:27:10.888Z",
+    "sortNum": 20000,
+    "folders": []
+  },
+  {
+    "_id": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "colName": "PE Firm",
+    "created": "2023-04-17T19:38:56.471Z",
+    "sortNum": 30000,
+    "folders": []
   }
 ]
