@@ -12,14 +12,20 @@ def add_company():
     current_app.logger.info(the_data)
     name = the_data['company_name']
     state = the_data['company_state']
-    query = 'insert into Company (company_name, company_state, company_status) values("'
-    query += name + '", "'
-    query += state + '", 0)'
-    current_app.logger.info(query)
+    industry_size = the_data['industry_size']
+    industry = the_data['industry']
+    query1 = 'insert into Industry (size , industry_name) values (' + str(industry_size) + ', "' + industry + '")'
+    query2 = 'insert into Company (industry_id, company_name, company_state, company_status) values(LAST_INSERT_ID(), "'
+    query2 += name + '", "'+ state + '", 1)'
+    current_app.logger.info(query1)
+    current_app.logger.info(query2)
     cursor = db.get_db().cursor()
-    cursor.execute(query)
+    cursor.execute(query1)
+    cursor.execute(query2)
     db.get_db().commit()
     return 'Success'
+ 
+
 
 # Adds company details
 @private_companies.route('/company_details', methods=['POST'])
@@ -68,14 +74,20 @@ def get_pe_firms():
 def make_ask():
     the_data = request.json
     current_app.logger.info(the_data)
+    company_name = the_data['company_name']
     ask_range = the_data['ask_range']
     initial_ask_price = the_data['initial_ask_price']
-    query = 'insert into Ask (ask_range, ask_price, ask_status) values("'
-    query += str(ask_range) + '", "'
-    query += str(initial_ask_price) + '", 1)'
-    current_app.logger.info(query)
+    query1 = 'insert into Ask (ask_range, ask_price, ask_status) values("'
+    query1 += str(ask_range) + '", "'
+    query1 += str(initial_ask_price) + '", 1)'
+    current_app.logger.info(query1)
     cursor = db.get_db().cursor()
-    cursor.execute(query)
+    cursor.execute(query1)
+    query2 = 'update Company set ask_id = LAST_INSERT_ID()  where company_name = "' + company_name +'"'
+    current_app.logger.info(query2)
+    cursor = db.get_db().cursor()
+    cursor.execute(query2)
+
     db.get_db().commit()
     return 'Success'
 
@@ -95,3 +107,16 @@ def update_ask():
     return 'Success'
 
 
+@private_companies.route('/industry', methods=['GET'])
+def get_industry():
+    cursor = db.get_db().cursor()
+    cursor.execute('select DISTINCT industry_name from Industry')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
