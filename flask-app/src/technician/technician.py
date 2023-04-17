@@ -21,7 +21,7 @@ def add_company():
     db.get_db().commit()
     return 'Technician created!'
 
-#get technician id
+# Get technician id
 @technicians.route('/technician', methods=['GET'])
 def get_tech_id():
     cursor = db.get_db().cursor()
@@ -140,7 +140,3 @@ def top_5_page():
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
     return the_response
-
-
- 
- # Allows company to be visible 
