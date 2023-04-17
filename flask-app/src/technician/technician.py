@@ -53,15 +53,3 @@ def get_companies(company_id):
     the_response.mimetype = 'application/json'
     return the_response
 
-
-# Approve company legitimacy 
-def update_company_status():
-    the_data = request.json
-    company_id = the_data['company_id']
-    current_app.logger.info(the_data)
-    query = 'update Company set company_status = 0 where company_name = "' + company_name + '"'
-    current_app.logger.info(query)
-    cursor = db.get_db().cursor()
-    cursor.execute(query)
-    db.get_db().commit()
-    return 'Success'
