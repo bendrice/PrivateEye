@@ -53,3 +53,21 @@ def get_companies(company_id):
     the_response.mimetype = 'application/json'
     return the_response
 
+
+# Updates Deal feasability score between 1 to 10
+@technicians.route('/deal_feasibility', methods=['PUT'])
+def update_deal_feasibility():
+    the_data = request.json
+    deal_id = the_data['deal_id']
+    score = the_data['score']
+    current_app.logger.info(the_data)
+    query = 'UPDATE Deal SET feasibility = '+str(score) + ' WHERE deal_id = ' + str(deal_id) 
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
+
+
+
