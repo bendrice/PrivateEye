@@ -5,6 +5,25 @@ from src import db
 
 technicians = Blueprint('technicians', __name__)
 
+#create technician profile 
+@technicians.route('/technician', methods=['POST'])
+def add_company():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    technician_id = the_data['technician_id']
+    last_name = the_data['last_name']
+    first_name = the_data['first_name']
+    query = 'insert into Technician values("'
+    query += str(technician_id) + '", "'
+    query += last_name + '", "'
+    query += first_name + '")'
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
+
 # Updates company status to closed (unavailible) given company name
 # when that company has accepetd a bid from PE_Firm 
 @technicians.route('/company_status', methods=['PUT'])
