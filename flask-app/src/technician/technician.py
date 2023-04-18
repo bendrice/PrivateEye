@@ -50,16 +50,23 @@ def update_company_visibility():
     return 'The Company is visible to PE firms!'
 
 # Updates company status to closed (unavailible) given company name
-# when that company has accepted a bid from PE_Firm 
+# when that company has accepted a bid from PE_Firm as well as deal status 
 @technicians.route('/company', methods=['PUT'])
-def update_company_status():
+def update_company_deal_status():
     the_data = request.json
     company_name = the_data['company_name']
+    deal_id = the_data['deal_id']
     current_app.logger.info(the_data)
-    query = 'update Company set company_status = 0 where company_name = "' + company_name + '"'
-    current_app.logger.info(query)
+    query1 = 'update Company set company_status = 0 where company_name = "' + company_name + '"'
+    current_app.logger.info(query1)
     cursor = db.get_db().cursor()
-    cursor.execute(query)
+    cursor.execute(query1)
+
+    query2 = 'UPDATE Deal SET deal_status = 0 where deal_id = ' + str(deal_id)
+    current_app.logger.info(query2)
+    cursor = db.get_db().cursor()
+    cursor.execute(query2)
+
     db.get_db().commit()
     return 'The Company ' + company_name + ' is no longer discoverable by PE Firms!'
 
@@ -90,6 +97,7 @@ def delete_ask():
     cursor.execute(query)
     db.get_db().commit()
     return 'Company id: ' + str(company_id) +'deleted!'
+
 
 # Updates Deal feasability score between 1 to 10
 @technicians.route('/deal', methods=['PUT'])
