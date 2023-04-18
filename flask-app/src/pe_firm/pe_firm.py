@@ -11,7 +11,7 @@ def get_private_companies():
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute('SELECT * FROM Company')
+    cursor.execute('Select * from Company join Allows A on Company.company_id = A.company_id where company_status = 1 and is_visible = 1')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -62,7 +62,7 @@ def get_deals():
     cursor = db.get_db().cursor()
 
     # use cursor to query the database for a list of products
-    cursor.execute('SELECT pe_name, ask_price, bid_price, feasibility, company_name from PE_Firm join Bid B on PE_Firm.pe_id = B.pe_id join Deal D on B.deal_id = D.deal_id join Ask A on D.ask_id = A.ask_id join Company C on A.ask_id = C.ask_id')
+    cursor.execute('SELECT pe_name, ask_price, bid_price, feasibility, company_name from PE_Firm join Bid B on PE_Firm.pe_id = B.pe_id join Deal D on B.deal_id = D.deal_id join Ask A on D.ask_id = A.ask_id join Company C on A.ask_id = C.ask_id join Allows A2 on C.company_id = A2.company_id where company_status = 1 and is_visible = 1')
 
     # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
@@ -127,7 +127,7 @@ def get_potential_companies():
     c_margins_minimum = the_data['c_margins_minimum']
     c_revenue_minimum = the_data['c_revenue_minimum']
 
-    query = "SELECT * FROM Company join Company_Details CD on Company.company_id = CD.company_id join Ask A on Company.ask_id = A.ask_id join Industry I on I.industry_id = Company.industry_id where ask_price <= " + str(ask_maximum) + " and industry_name = '" + industry + "' and company_state = '" + state_location + "' and company_status = " + str(c_status) + " and margins >= " + str(c_margins_minimum) + " and revenue >= " + str(c_revenue_minimum)
+    query = "SELECT * FROM Company join Company_Details CD on Company.company_id = CD.company_id join Ask A on Company.ask_id = A.ask_id join Industry I on I.industry_id = Company.industry_id join Allows A2 on Company.company_id = A2.company_id where ask_price <= " + str(ask_maximum) + " and industry_name = '" + industry + "' and company_state = '" + state_location + "' and company_status = " + str(c_status) + " and margins >= " + str(c_margins_minimum) + " and revenue >= " + str(c_revenue_minimum) + " and is_visible = 1"  
     
     current_app.logger.info(query)
     cursor = db.get_db().cursor()
