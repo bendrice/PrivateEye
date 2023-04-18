@@ -37,9 +37,9 @@ CREATE TABLE Company (
     company_name   varchar(50) UNIQUE             NOT NULL,
     company_state  varchar(50)                    NOT NULL,
     company_status boolean                        NOT NULL,
-    CONSTRAINT fk_2 FOREIGN KEY (industry_id) REFERENCES Industry (industry_id) ON UPDATE CASCADE ON DELETE RESTRICT,
-    CONSTRAINT fk_3 FOREIGN KEY (ask_id) REFERENCES Ask (ask_id) ON UPDATE CASCADE ON DELETE RESTRICT,
-    CONSTRAINT fk_x FOREIGN KEY (portfolio_id) REFERENCES Portfolio (portfolio_id) ON UPDATE CASCADE ON DELETE RESTRICT
+    CONSTRAINT fk_2 FOREIGN KEY (industry_id) REFERENCES Industry (industry_id) ON UPDATE CASCADE ON DELETE CASCADE,
+    CONSTRAINT fk_3 FOREIGN KEY (ask_id) REFERENCES Ask (ask_id) ON UPDATE CASCADE ON DELETE CASCADE,
+    CONSTRAINT fk_x FOREIGN KEY (portfolio_id) REFERENCES Portfolio (portfolio_id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 CREATE TABLE Company_Details (
@@ -57,7 +57,7 @@ CREATE TABLE Company_Details (
 
 CREATE TABLE Technician (
     technician_id    int PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    technician_last  varchar(50)                    NOT NULL,
+    technician_last  varchar(50)   UNIQUE           NOT NULL,
     technician_first varchar(50)                    NOT NULL
 );
 
@@ -68,7 +68,7 @@ CREATE TABLE Deal (
     top_5       BOOLEAN NOT NULL,
     deal_status BOOLEAN NOT NULL,
     CONSTRAINT fk_5 FOREIGN KEY (ask_id) REFERENCES
-        Ask (ask_id) ON UPDATE CASCADE ON DELETE RESTRICT,
+        Ask (ask_id) ON UPDATE CASCADE ON DELETE CASCADE,
         CONSTRAINT feasibility_check CHECK (feasibility BETWEEN 0 AND 10)
 );
 

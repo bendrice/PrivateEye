@@ -1585,3 +1585,20 @@ VALUES (83, 21, 'Wuckert-Gislason', 'Kreiger, Conroy and Huels', 'Dibbert, Funk 
        (25, 96, 'Wolf and Sons', 'Johns Inc', 'Zboncak Group', 'Kessler, Sauer and Kertzmann',
         'Halvorson, Schmitt and Ziemann');
 
+insert into PE_Firm values (121, 'jSON', 'California',12749893);
+
+insert into Portfolio  values (110, 121, 439403129);
+
+insert into Industry values (108, 3224909, 'Biking');
+
+insert into Ask values (114, .78, 75938,0);
+insert into Ask values (115, .78, 75938,0);
+insert into Ask values (116, .78, 75938,0);
+insert into Ask values (117, .78, 75938,0);
+insert into Ask values (118, .78, 75938,0);
+
+insert into Company values (202, 114,108,110, 'Easterwood', 'California', 0);
+insert into Company values (200, 115,108,110, 'Mike & Rice', 'California', 1);
+insert into Company values (203, 116,108,110, 'Font & Inc', 'California', 1);
+insert into Company values (201, 117,108,110, 'Murko', 'California', 0);
+insert into Company values (204, 118,108,110, 'BridgeTable', 'California', 1);
