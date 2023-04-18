@@ -419,12 +419,12 @@
     "method": "GET",
     "sortNum": 70000,
     "created": "2023-04-18T18:53:29.202Z",
-    "modified": "2023-04-18T18:59:15.651Z",
+    "modified": "2023-04-18T22:16:33.866Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"ask_maximum\":10000000000,\n  \"industry\":\"Major Pharmaceuticals\",\n  \"state_location\":\"New York\",\n  \"c_status\":0,\n  \"c_margins_minimum\":0.01,\n  \"c_revenue_minimum\":0\n}",
+      "raw": "{\n  \"ask_maximum\":10000000000,\n  \"industry\":\"Major Banks\",\n  \"state_location\":\"Nevada\",\n  \"c_status\":1,\n  \"c_margins_minimum\":0.01,\n  \"c_revenue_minimum\":0\n}",
       "form": []
     },
     "tests": []
