@@ -69,12 +69,12 @@
     "method": "PUT",
     "sortNum": 10000,
     "created": "2023-04-17T19:39:03.545Z",
-    "modified": "2023-04-17T19:54:23.508Z",
+    "modified": "2023-04-18T19:49:17.945Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\":\"Russel Inc\",\n  \"bid_range\":0.33,\n  \"bid_price\":190\n}",
+      "raw": "{\n  \"specific_bid_id\":7,\n  \"bid_range\":0.33,\n  \"bid_price\":190\n}",
       "form": []
     },
     "tests": []
@@ -359,6 +359,148 @@
     "body": {
       "type": "json",
       "raw": "{\n  \"tech_id\": 334,\n  \"company_id1\": 92\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "dde286d8-6bb9-4009-a954-08b2c0612eaf",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Get_All_Private_Companies",
+    "url": "localhost:8001/pe/private_companies",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-04-18T18:40:55.373Z",
+    "modified": "2023-04-18T18:41:01.569Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "94386b47-9628-424e-85b0-c1fd1cc9017b",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Create_Bid",
+    "url": "localhost:8001/pe/create_bid",
+    "method": "POST",
+    "sortNum": 50000,
+    "created": "2023-04-18T18:42:12.599Z",
+    "modified": "2023-04-18T19:39:29.833Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"pe_name_1\":\"Casper Group\",\n  \"d_id\":234,\n  \"b_range\": 0.01,\n  \"b_price\":3000000.0\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "cc5cb6d6-ed72-4a9c-8d03-88026c3e57ec",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Get_All_Deals",
+    "url": "localhost:8001/pe/get_deals",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2023-04-18T18:49:49.570Z",
+    "modified": "2023-04-18T18:50:17.323Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "3172427c-b2ec-4d2f-8ec1-a9ac2098afa5",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Get_All_Potential_Private_Companies",
+    "url": "localhost:8001/pe/get_potential_companies",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2023-04-18T18:53:29.202Z",
+    "modified": "2023-04-18T18:59:15.651Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"ask_maximum\":10000000000,\n  \"industry\":\"Major Pharmaceuticals\",\n  \"state_location\":\"New York\",\n  \"c_status\":0,\n  \"c_margins_minimum\":0.01,\n  \"c_revenue_minimum\":0\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b5b54989-590f-4da4-ab8d-d88fc41b88c8",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Compare_Companies",
+    "url": "localhost:8001/pe/compare",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2023-04-18T19:00:27.408Z",
+    "modified": "2023-04-18T19:06:01.359Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"company_name_1\":\"Legros Group\",\n  \"company_name_2\":\"Larson Inc\",\n  \"company_name_3\":\"Witting-Lesch\",\n  \"company_name_4\":\"Hane-Beer\",\n  \"company_name_5\":\"Smith and Sons\"\n}\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "e19aaa95-ab6e-4241-aadc-ed780fad3f15",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Create_Portfolio",
+    "url": "localhost:8001/pe/create_portfolio",
+    "method": "POST",
+    "sortNum": 90000,
+    "created": "2023-04-18T19:06:57.021Z",
+    "modified": "2023-04-18T19:09:14.423Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"the_pe_firm\":\"Lynch-Green\",\n  \"fund_size\": 5\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9b30f075-00e0-41b0-a424-0648ffdc89f2",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Add_Portfolio_Company",
+    "url": "localhost:8001/pe/add_portfolio_company",
+    "method": "PUT",
+    "sortNum": 110000,
+    "created": "2023-04-18T19:22:36.734Z",
+    "modified": "2023-04-18T19:24:38.951Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"the_private_company\":\"Wiza Group\",\n  \"private_equity_firm\":\"Stanton-Terry\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2096a6ee-8e65-4acc-9e2a-17b33420fbc3",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Delete_Bid",
+    "url": "localhost:8001/pe/delete_bid",
+    "method": "DELETE",
+    "sortNum": 130000,
+    "created": "2023-04-18T19:34:54.427Z",
+    "modified": "2023-04-18T19:37:14.085Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"bid_id_key\":1\n}",
       "form": []
     },
     "tests": []

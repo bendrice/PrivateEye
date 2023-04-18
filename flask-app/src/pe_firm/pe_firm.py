@@ -38,13 +38,13 @@ def get_private_companies():
 def create_bid():
     the_data = request.json
     current_app.logger.info(the_data)
-    name = the_data['name']
+    pe_name_1 = the_data['pe_name_1']
     d_id = the_data['d_id']
     b_range = the_data['b_range']
     b_price = the_data['b_price']
     query = 'INSERT INTO Bid (pe_id, deal_id, bid_range, bid_price, bid_status) '
-    query += 'VALUES ((SELECT pe_id FROM PE_Firm WHERE pe_name = "' + name + '"), '
-    query += '(SELECT deal_id FROM Deal WHERE deal_id = "' + d_id + '"), '
+    query += 'VALUES ((SELECT pe_id FROM PE_Firm WHERE pe_name = "' + pe_name_1 + '"), '
+    query += '(SELECT deal_id FROM Deal WHERE deal_id = "' + str(d_id) + '"), '
     query += str(b_range) + ', '
     query += str(b_price) + ', '
     query += '0)'
@@ -91,15 +91,15 @@ def update_bid():
     the_data = request.json
     current_app.logger.info(the_data)
 
-    name = the_data['name']
+    specific_bid_id = the_data['specific_bid_id']
     bid_range = the_data['bid_range']
     bid_price = the_data['bid_price']
 
     query1 = 'UPDATE Bid SET bid_range = '
-    query1 += str(bid_range) + ' WHERE deal_id = (SELECT deal_id FROM Deal join Ask A on Deal.ask_id = A.ask_id join Company C on A.ask_id = C.ask_id WHERE company_name = "'  + name + '")'
+    query1 += str(bid_range) + ' WHERE bid_id = ' + str(specific_bid_id)
 
     query2 = 'UPDATE Bid SET bid_price = '
-    query2 += str(bid_price) + ' WHERE deal_id = (SELECT deal_id FROM Deal join Ask A on Deal.ask_id = A.ask_id join Company C on A.ask_id = C.ask_id WHERE company_name = "'  + name + '")'
+    query2 += str(bid_price) + ' WHERE bid_id = ' + str(specific_bid_id)
 
     current_app.logger.info(query1)
     cursor1 = db.get_db().cursor()
@@ -230,7 +230,7 @@ def add_portfolio_company():
     db.get_db().commit()
     return 'Success'
 
-#Delete a bid -- MAKE SURE TO TEST 
+#Delete a bid
 @pe_firms.route('/delete_bid', methods=['DELETE'])
 def delete_bid():
     the_data = request.json
@@ -238,7 +238,7 @@ def delete_bid():
 
     bid_id_key = the_data['bid_id_key']
 
-    query = "DELETE from Bid where bid_id = " + bid_id_key
+    query = "DELETE from Bid where bid_id = " + str(bid_id_key)
 
     current_app.logger.info(query)
     cursor = db.get_db().cursor()
