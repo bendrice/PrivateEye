@@ -1602,3 +1602,5 @@ insert into Company values (200, 115,108,110, 'Mike & Rice', 'California', 1);
 insert into Company values (203, 116,108,110, 'Font & Inc', 'California', 1);
 insert into Company values (201, 117,108,110, 'Murko', 'California', 0);
 insert into Company values (204, 118,108,110, 'BridgeTable', 'California', 1);
+
+update Deal set top_5 = 0 where top_5 = 1

@@ -83,10 +83,16 @@ def make_ask():
     current_app.logger.info(query1)
     cursor = db.get_db().cursor()
     cursor.execute(query1)
+
     query2 = 'update Company set ask_id = LAST_INSERT_ID()  where company_name = "' + company_name +'"'
     current_app.logger.info(query2)
     cursor = db.get_db().cursor()
     cursor.execute(query2)
+
+    query3 = 'INSERT INTO Deal (ask_id, feasibility, top_5, deal_status) VALUES (LAST_INSERT_ID(), 0, 0, 0)'
+    current_app.logger.info(query3)
+    cursor = db.get_db().cursor()
+    cursor.execute(query3)
 
     db.get_db().commit()
     return 'Success'
