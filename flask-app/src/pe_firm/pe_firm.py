@@ -108,7 +108,10 @@ def compare_companies():
 @pe_firms.route('/deal', methods=['GET'])
 def get_deals():
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT pe_name, ask_price, bid_price, feasibility, company_name from PE_Firm join Bid B on PE_Firm.pe_id = B.pe_id join Deal D on B.deal_id = D.deal_id join Ask A on D.ask_id = A.ask_id join Company C on A.ask_id = C.ask_id join Allows A2 on C.company_id = A2.company_id where company_status = 1 and is_visible = 1')
+    cursor.execute('select company_name, ask_price, D.deal_id, feasibility from Company'
+    + ' join Allows A on Company.company_id = A.company_id'
+    + ' join Ask A2 on Company.ask_id = A2.ask_id'
+    + ' join Deal D on A2.ask_id = D.ask_id where company_status = 1 and is_visible = 1')
     column_headers = [x[0] for x in cursor.description]
 
     # create an empty dictionary object to use in 
