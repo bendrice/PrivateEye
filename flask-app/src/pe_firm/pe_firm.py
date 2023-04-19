@@ -103,8 +103,7 @@ def compare_companies():
     return the_response
 
 
-
-# Get existing deals
+#Get the bid id for a specific deal id 
 @pe_firms.route('/deal', methods=['GET'])
 def get_deals():
     cursor = db.get_db().cursor()
@@ -126,6 +125,29 @@ def get_deals():
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
 
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+#get the bid_id for an existing deal
+@pe_firms.route('/bid', methods=['GET'])
+def get_bid_id():
+
+    the_data = request.json
+    current_app.logger.info(the_data)
+    the_deal_id = the_data['the_deal_id']
+
+    query = "SELECT bid_id FROM Deal join Bid B on Deal.deal_id = B.deal_id where Deal.deal_id = " + str(the_deal_id)
+
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
     the_response = make_response(jsonify(json_data))
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
