@@ -500,5 +500,76 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "2bc990ac-c289-40f7-a1ff-5ba0fc386265",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Create PE Firm2",
+    "url": "localhost:8001/pe/pe_firm",
+    "method": "POST",
+    "sortNum": 170000,
+    "created": "2023-04-19T18:52:36.282Z",
+    "modified": "2023-04-19T18:53:48.373Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"created_pe_name\":\"MarkFont Co.\",\n  \"private_equity_state\":\"Texas\",\n  \"aum\":7368.43\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a8793285-abe7-4775-b23d-3238946e300f",
+    "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
+    "containerId": "",
+    "name": "Add new technician ",
+    "url": "localhost:8001/t/technician",
+    "method": "POST",
+    "sortNum": 120000,
+    "created": "2023-04-19T18:55:15.217Z",
+    "modified": "2023-04-19T18:55:44.822Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"last_name\": \"Lulu\",\n  \"first_name\": \"Lemon\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "8d7336af-9bfd-42c8-bde8-2509c0164f85",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Compare companies",
+    "url": "localhost:8001/pe/compare",
+    "method": "GET",
+    "sortNum": 190000,
+    "created": "2023-04-19T18:57:41.364Z",
+    "modified": "2023-04-19T19:02:51.422Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"company_name_1\":\"Jerde-Purdy\",\n  \"company_name_2\":\"Metz-Howe\",\n  \"company_name_3\":\"Witting-Lesch\",\n  \"company_name_4\":\"Hane-Beer\",\n  \"company_name_5\":\"Larson Inc\"\n}\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9342e674-5eb4-432b-b546-605a93d3c916",
+    "colId": "376f5213-3eac-4a87-8100-68e74633ab22",
+    "containerId": "",
+    "name": "Get bids",
+    "url": "localhost:8001/pc/bid",
+    "method": "GET",
+    "sortNum": 100000,
+    "created": "2023-04-19T19:03:18.062Z",
+    "modified": "2023-04-19T19:03:23.231Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
