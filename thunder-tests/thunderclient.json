@@ -462,5 +462,24 @@
       "form": []
     },
     "tests": []
+  },
+  {
+    "_id": "0be7e310-eccb-44e3-860b-f12ae0599276",
+    "colId": "1df1a3f4-34f9-4317-9aa1-bcfe63e496a7",
+    "containerId": "",
+    "name": "Create_PE_Firm",
+    "url": "localhost:8001/pe/create_pe_firm",
+    "method": "POST",
+    "sortNum": 160000,
+    "created": "2023-04-19T04:55:49.722Z",
+    "modified": "2023-04-19T04:57:27.914Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"created_pe_name\":\"Murko_Fund\",\n  \"private_equity_state\":\"California\",\n  \"aum\":430940\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
