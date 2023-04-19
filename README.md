@@ -19,9 +19,6 @@ This repo contains a boilerplate setup for spinning up 3 Docker containers:
 
 # PrivateEye
 
-# Description 
-## Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
 Our project is a Deal Sourcing Platform that has 3 user personas:
 1. Private Company: Founders seeking investment for their firm externally.
 2. Financial buyer: Private Equity Company analysts and associates looking to invest in private companies.
@@ -35,13 +32,6 @@ Essentially, PrivateEye aims to automate the process of private companies lookin
 What we learned from this project is the technical aspects of how to create a database that connects and functions with our back end as well as our front end.(make this longer and more specific bc I dont know what to write for this - it is the what did we learn) 
 
 We also learned the broader process of a private equity company going about acquiring companies to add to their investment portfolio with the aim of increasing their value and generating returns for investors. The process involves sourcing potential targets, conducting due diligence, valuing the company, securing financing, acquiring the target company, improving its operations and increasing its value, and ultimately exiting the investment by selling the company. Private equity firms use a combination of debt and equity financing to acquire companies and work to implement growth strategies post-acquisition to increase their value. The ultimate goal is to sell the company at a higher valuation than the purchase price to generate returns for investors.
-
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
 
 ## Database
 Each table includes primary key(s) and foreign key(s). Here are the following tables and attributes:
