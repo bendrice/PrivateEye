@@ -4,6 +4,24 @@ from src import db
 
 pe_firms = Blueprint('pe_firms', __name__)
 
+#create PE firm
+@pe_firms.route('/create_pe_firm', methods=['POST'])
+def create_pe_firm():
+    the_data = request.json
+    current_app.logger.info(the_data)
+
+    created_pe_name = the_data['created_pe_name']
+    private_equity_state = the_data['private_equity_state']
+    aum = the_data['aum']
+
+    query = "INSERT INTO PE_Firm (pe_name, pe_state, aum) VALUES ('{}', '{}', {})".format(created_pe_name, private_equity_state, aum)
+
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
 # Gets all the private companies and their information 
 @pe_firms.route('/private_companies', methods=['GET'])
 def get_private_companies():
@@ -32,85 +50,6 @@ def get_private_companies():
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
     return the_response
-
-# Creates a bid for a specific private company  
-@pe_firms.route('/create_bid', methods=['POST'])
-def create_bid():
-    the_data = request.json
-    current_app.logger.info(the_data)
-    pe_name_1 = the_data['pe_name_1']
-    d_id = the_data['d_id']
-    b_range = the_data['b_range']
-    b_price = the_data['b_price']
-    query = 'INSERT INTO Bid (pe_id, deal_id, bid_range, bid_price, bid_status) '
-    query += 'VALUES ((SELECT pe_id FROM PE_Firm WHERE pe_name = "' + pe_name_1 + '"), '
-    query += '(SELECT deal_id FROM Deal WHERE deal_id = "' + str(d_id) + '"), '
-    query += str(b_range) + ', '
-    query += str(b_price) + ', '
-    query += '0)'
-    current_app.logger.info(query)
-    cursor = db.get_db().cursor()
-    cursor.execute(query)
-    db.get_db().commit()
-    return 'Success'
-
-#function that lets you see all of the deals that exist
-@pe_firms.route('/get_deals', methods=['GET'])
-def get_deals():
-
-    # get a cursor object from the database
-    cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
-    cursor.execute('SELECT pe_name, ask_price, bid_price, feasibility, company_name from PE_Firm join Bid B on PE_Firm.pe_id = B.pe_id join Deal D on B.deal_id = D.deal_id join Ask A on D.ask_id = A.ask_id join Company C on A.ask_id = C.ask_id join Allows A2 on C.company_id = A2.company_id where company_status = 1 and is_visible = 1')
-
-    # grab the column headers from the returned data
-    column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
-    json_data = []
-
-    # fetch all the data from the cursor
-    theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
-    for row in theData:
-        json_data.append(dict(zip(column_headers, row)))
-
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
-
-# Updates a bid for a specific private company
-@pe_firms.route('/update_bid', methods=['PUT'])
-def update_bid():
-
-    the_data = request.json
-    current_app.logger.info(the_data)
-
-    specific_bid_id = the_data['specific_bid_id']
-    bid_range = the_data['bid_range']
-    bid_price = the_data['bid_price']
-
-    query1 = 'UPDATE Bid SET bid_range = '
-    query1 += str(bid_range) + ' WHERE bid_id = ' + str(specific_bid_id)
-
-    query2 = 'UPDATE Bid SET bid_price = '
-    query2 += str(bid_price) + ' WHERE bid_id = ' + str(specific_bid_id)
-
-    current_app.logger.info(query1)
-    cursor1 = db.get_db().cursor()
-    cursor1.execute(query1)
-    
-    current_app.logger.info(query2)
-    cursor2 = db.get_db().cursor()
-    cursor2.execute(query2)
-    db.get_db().commit()
-
-    return 'Success'
 
 #search for potential companies that a Private Equity firm would want to potentially invest in 
 # Gets all the private companies and their information 
@@ -154,7 +93,7 @@ def get_potential_companies():
     return the_response
 
 
-# Compare five companies and return a comparison table based on revenue and margin
+    # Compare five companies and return a comparison table based on revenue and margin
 @pe_firms.route('/compare', methods=['GET'])
 def compare_companies():
     the_data = request.json
@@ -194,6 +133,104 @@ def compare_companies():
 
 
 
+#function that lets you see all of the deals that exist
+@pe_firms.route('/get_deals', methods=['GET'])
+def get_deals():
+
+    # get a cursor object from the database
+    cursor = db.get_db().cursor()
+
+    # use cursor to query the database for a list of products
+    cursor.execute('SELECT pe_name, ask_price, bid_price, feasibility, company_name from PE_Firm join Bid B on PE_Firm.pe_id = B.pe_id join Deal D on B.deal_id = D.deal_id join Ask A on D.ask_id = A.ask_id join Company C on A.ask_id = C.ask_id join Allows A2 on C.company_id = A2.company_id where company_status = 1 and is_visible = 1')
+
+    # grab the column headers from the returned data
+    column_headers = [x[0] for x in cursor.description]
+
+    # create an empty dictionary object to use in 
+    # putting column headers together with data
+    json_data = []
+
+    # fetch all the data from the cursor
+    theData = cursor.fetchall()
+
+    # for each of the rows, zip the data elements together with
+    # the column headers. 
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+# Creates a bid for a specific private company  
+@pe_firms.route('/create_bid', methods=['POST'])
+def create_bid():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    pe_name_1 = the_data['pe_name_1']
+    d_id = the_data['d_id']
+    b_range = the_data['b_range']
+    b_price = the_data['b_price']
+    query = 'INSERT INTO Bid (pe_id, deal_id, bid_range, bid_price, bid_status) '
+    query += 'VALUES ((SELECT pe_id FROM PE_Firm WHERE pe_name = "' + pe_name_1 + '"), '
+    query += '(SELECT deal_id FROM Deal WHERE deal_id = "' + str(d_id) + '"), '
+    query += str(b_range) + ', '
+    query += str(b_price) + ', '
+    query += '0)'
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
+# Updates a bid for a specific private company
+@pe_firms.route('/update_bid', methods=['PUT'])
+def update_bid():
+
+    the_data = request.json
+    current_app.logger.info(the_data)
+
+    specific_bid_id = the_data['specific_bid_id']
+    bid_range = the_data['bid_range']
+    bid_price = the_data['bid_price']
+
+    query1 = 'UPDATE Bid SET bid_range = '
+    query1 += str(bid_range) + ' WHERE bid_id = ' + str(specific_bid_id)
+
+    query2 = 'UPDATE Bid SET bid_price = '
+    query2 += str(bid_price) + ' WHERE bid_id = ' + str(specific_bid_id)
+
+    current_app.logger.info(query1)
+    cursor1 = db.get_db().cursor()
+    cursor1.execute(query1)
+    
+    current_app.logger.info(query2)
+    cursor2 = db.get_db().cursor()
+    cursor2.execute(query2)
+    db.get_db().commit()
+
+    return 'Success'
+
+
+#Delete a bid
+@pe_firms.route('/delete_bid', methods=['DELETE'])
+def delete_bid():
+    the_data = request.json
+    current_app.logger.info(the_data)
+
+    bid_id_key = the_data['bid_id_key']
+
+    query = "DELETE from Bid where bid_id = " + str(bid_id_key)
+
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Success'
+
+
+
 #Create a portfolio company 
 @pe_firms.route('/create_portfolio', methods=['POST'])
 def create_portfolio():
@@ -230,20 +267,6 @@ def add_portfolio_company():
     db.get_db().commit()
     return 'Success'
 
-#Delete a bid
-@pe_firms.route('/delete_bid', methods=['DELETE'])
-def delete_bid():
-    the_data = request.json
-    current_app.logger.info(the_data)
 
-    bid_id_key = the_data['bid_id_key']
-
-    query = "DELETE from Bid where bid_id = " + str(bid_id_key)
-
-    current_app.logger.info(query)
-    cursor = db.get_db().cursor()
-    cursor.execute(query)
-    db.get_db().commit()
-    return 'Success'
 
 
