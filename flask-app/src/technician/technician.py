@@ -145,10 +145,9 @@ def update_top_5():
 @technicians.route('/top_5', methods=['GET'])
 def top_5_page():
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT pe_name, ask_price, bid_price, feasibility, '
-               +'company_name from PE_Firm join Bid B on PE_Firm.pe_id = B.pe_id '+
-               'join Deal D on B.deal_id = D.deal_id join Ask A on D.ask_id = A.ask_id '+
-               'join Company C on A.ask_id = C.ask_id limit 5')
+    cursor.execute('SELECT pe_name, ask_price, bid_price, feasibility, company_name from PE_Firm join Bid B on PE_Firm.pe_id = B.pe_id '
+               + 'join Deal D on B.deal_id = D.deal_id join Ask A on D.ask_id = A.ask_id '
+               + 'join Company C on A.ask_id = C.ask_id where feasibility > 7 and top_5 = 1 limit 5')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
