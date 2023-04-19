@@ -2,14 +2,14 @@ from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
+# Private Equity Firm blueprint 
 pe_firms = Blueprint('pe_firms', __name__)
 
-#create PE firm
-@pe_firms.route('/create_pe_firm', methods=['POST'])
+# Create Private Equity firm profile
+@pe_firms.route('/pe_firm', methods=['POST'])
 def create_pe_firm():
     the_data = request.json
     current_app.logger.info(the_data)
-
     created_pe_name = the_data['created_pe_name']
     private_equity_state = the_data['private_equity_state']
     aum = the_data['aum']
@@ -20,40 +20,28 @@ def create_pe_firm():
     cursor = db.get_db().cursor()
     cursor.execute(query)
     db.get_db().commit()
-    return 'Success'
+    return 'PE Firm: ' + created_pe_name +  ' created!'
 
-# Gets all the private companies and their information 
-@pe_firms.route('/private_companies', methods=['GET'])
-def get_private_companies():
-    # get a cursor object from the database
+# Gets all the private companies and their information like state, revenue, industry, etc.
+@pe_firms.route('/company', methods=['GET'])
+def get_company():
     cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
-    cursor.execute('Select * from Company join Allows A on Company.company_id = A.company_id where company_status = 1 and is_visible = 1')
-
-    # grab the column headers from the returned data
+    cursor.execute('Select company_name, company_state, industry_name, revenue, margins  from Company join Company_Details CD on Company.company_id = CD.company_id'
+    + ' join Allows A on Company.company_id = A.company_id join Industry I on Company.industry_id = I.industry_id'
+    + ' where company_status = 1 and is_visible = 1')
     column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
     json_data = []
-
-    # fetch all the data from the cursor
     theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
-
     the_response = make_response(jsonify(json_data))
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
     return the_response
 
-#search for potential companies that a Private Equity firm would want to potentially invest in 
+# Search for potential private companies that a Private Equity firm would want to potentially invest in 
 # Gets all the private companies and their information 
-@pe_firms.route('/get_potential_companies', methods=['GET'])
+@pe_firms.route('/company_information', methods=['GET'])
 def get_potential_companies():
     
     the_data = request.json
@@ -66,39 +54,33 @@ def get_potential_companies():
     c_margins_minimum = the_data['c_margins_minimum']
     c_revenue_minimum = the_data['c_revenue_minimum']
 
-    query = "SELECT * FROM Company join Company_Details CD on Company.company_id = CD.company_id join Ask A on Company.ask_id = A.ask_id join Industry I on I.industry_id = Company.industry_id join Allows A2 on Company.company_id = A2.company_id where ask_price <= " + str(ask_maximum) + " and industry_name = '" + industry + "' and company_state = '" + state_location + "' and company_status = " + str(c_status) + " and margins >= " + str(c_margins_minimum) + " and revenue >= " + str(c_revenue_minimum) + " and is_visible = 1"  
-    
+    query = "SELECT * FROM Company join Company_Details CD on Company.company_id = CD.company_id join Ask A on Company.ask_id = A.ask_id join Industry I on I.industry_id = Company.industry_id join Allows A2 on Company.company_id = A2.company_id where ask_price <= " 
+    query+= str(ask_maximum) + " and industry_name = '" 
+    query+= industry + "' and company_state = '" 
+    query+= state_location + "' and company_status = " 
+    query+= str(c_status) + " and margins >= " 
+    query+= str(c_margins_minimum) + " and revenue >= " 
+    query+= str(c_revenue_minimum) + " and is_visible = 1"  
+
     current_app.logger.info(query)
     cursor = db.get_db().cursor()
     cursor.execute(query)
-
-    # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
     json_data = []
-
-    # fetch all the data from the cursor
     theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
-
     the_response = make_response(jsonify(json_data))
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
     return the_response
 
 
-    # Compare five companies and return a comparison table based on revenue and margin
+# Compare five companies and return a comparison table based on revenue and margin
 @pe_firms.route('/compare', methods=['GET'])
 def compare_companies():
     the_data = request.json
     current_app.logger.info(the_data)
-
     company_name_1 = the_data['company_name_1']
     company_name_2 = the_data['company_name_2']
     company_name_3 = the_data['company_name_3']
@@ -110,22 +92,11 @@ def compare_companies():
     current_app.logger.info(query)
     cursor = db.get_db().cursor()
     cursor.execute(query)
-
-    # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
-
-    # create an empty dictionary object to use in 
-    # putting column headers together with data
     json_data = []
-
-    # fetch all the data from the cursor
     theData = cursor.fetchall()
-
-    # for each of the rows, zip the data elements together with
-    # the column headers. 
     for row in theData:
         json_data.append(dict(zip(column_headers, row)))
-
     the_response = make_response(jsonify(json_data))
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
@@ -133,17 +104,11 @@ def compare_companies():
 
 
 
-#function that lets you see all of the deals that exist
-@pe_firms.route('/get_deals', methods=['GET'])
+# Get existing deals
+@pe_firms.route('/deal', methods=['GET'])
 def get_deals():
-
-    # get a cursor object from the database
     cursor = db.get_db().cursor()
-
-    # use cursor to query the database for a list of products
     cursor.execute('SELECT pe_name, ask_price, bid_price, feasibility, company_name from PE_Firm join Bid B on PE_Firm.pe_id = B.pe_id join Deal D on B.deal_id = D.deal_id join Ask A on D.ask_id = A.ask_id join Company C on A.ask_id = C.ask_id join Allows A2 on C.company_id = A2.company_id where company_status = 1 and is_visible = 1')
-
-    # grab the column headers from the returned data
     column_headers = [x[0] for x in cursor.description]
 
     # create an empty dictionary object to use in 
@@ -164,7 +129,7 @@ def get_deals():
     return the_response
 
 # Creates a bid for a specific private company  
-@pe_firms.route('/create_bid', methods=['POST'])
+@pe_firms.route('/bid', methods=['POST'])
 def create_bid():
     the_data = request.json
     current_app.logger.info(the_data)
@@ -182,15 +147,13 @@ def create_bid():
     cursor = db.get_db().cursor()
     cursor.execute(query)
     db.get_db().commit()
-    return 'Success'
+    return 'Bid created and sent!' 
 
 # Updates a bid for a specific private company
-@pe_firms.route('/update_bid', methods=['PUT'])
+@pe_firms.route('/bid', methods=['PUT'])
 def update_bid():
-
     the_data = request.json
     current_app.logger.info(the_data)
-
     specific_bid_id = the_data['specific_bid_id']
     bid_range = the_data['bid_range']
     bid_price = the_data['bid_price']
@@ -204,7 +167,7 @@ def update_bid():
     current_app.logger.info(query1)
     cursor1 = db.get_db().cursor()
     cursor1.execute(query1)
-    
+
     current_app.logger.info(query2)
     cursor2 = db.get_db().cursor()
     cursor2.execute(query2)
@@ -214,7 +177,7 @@ def update_bid():
 
 
 #Delete a bid
-@pe_firms.route('/delete_bid', methods=['DELETE'])
+@pe_firms.route('/bid', methods=['DELETE'])
 def delete_bid():
     the_data = request.json
     current_app.logger.info(the_data)
@@ -232,7 +195,7 @@ def delete_bid():
 
 
 #Create a portfolio company 
-@pe_firms.route('/create_portfolio', methods=['POST'])
+@pe_firms.route('/portfolio', methods=['POST'])
 def create_portfolio():
     the_data = request.json
     current_app.logger.info(the_data)
@@ -240,7 +203,8 @@ def create_portfolio():
     the_pe_firm = the_data['the_pe_firm']
     fund_size = the_data['fund_size']
 
-    query = "INSERT INTO Portfolio (pe_id, fund) VALUES ((SELECT pe_id FROM PE_Firm WHERE pe_name = '" + the_pe_firm + "'), " + str(fund_size) + ")"
+    query = "INSERT INTO Portfolio (pe_id, fund) VALUES ((SELECT pe_id FROM PE_Firm WHERE pe_name = '" 
+    query+= the_pe_firm + "'), " + str(fund_size) + ")"
 
     current_app.logger.info(query)
     cursor = db.get_db().cursor()
@@ -251,7 +215,7 @@ def create_portfolio():
 
 
 #Add a private company to a specific PE firm's portfolio
-@pe_firms.route('/add_portfolio_company', methods=['PUT'])
+@pe_firms.route('/portfolio', methods=['PUT'])
 def add_portfolio_company():
     the_data = request.json
     current_app.logger.info(the_data)

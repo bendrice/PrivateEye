@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-
+# Private Company blueprint
 private_companies = Blueprint('private_companies', __name__)
 
 # Adds company information
@@ -54,7 +54,7 @@ def add_company_details():
 
 
 # Gets PE firms
-@private_companies.route('/pefirm', methods=['GET'])
+@private_companies.route('/pe_firm', methods=['GET'])
 def get_pe_firms():
     cursor = db.get_db().cursor()
     cursor.execute('select pe_name, pe_state, aum from PE_Firm')
@@ -98,7 +98,7 @@ def make_ask():
     return 'Success'
 
 # Updates ask
-@private_companies.route('/update_ask', methods=['PUT'])
+@private_companies.route('/ask', methods=['PUT'])
 def update_ask():
     the_data = request.json
     current_app.logger.info(the_data)
@@ -113,7 +113,7 @@ def update_ask():
     return 'Success'
 
 # Deletes ask
-@private_companies.route('/delete_ask', methods=['DELETE'])
+@private_companies.route('/ask', methods=['DELETE'])
 def delete_ask():
     the_data = request.json
     current_app.logger.info(the_data)
@@ -126,7 +126,7 @@ def delete_ask():
     return 'Success'
 
 # Browse bids
-@private_companies.route('/get_bids', methods=['GET'])
+@private_companies.route('/bid', methods=['GET'])
 def get_bids():
     cursor = db.get_db().cursor()
     cursor.execute('select PF.pe_id, pe_name, pe_state,aum, bid_price from Bid join PE_Firm PF on Bid.pe_id = PF.pe_id')
@@ -142,7 +142,7 @@ def get_bids():
 
 
 # Accept/Reject Bid
-@private_companies.route('/update_bid_status', methods=['PUT'])
+@private_companies.route('/bid', methods=['PUT'])
 def update_bid_status():
     the_data = request.json
     current_app.logger.info(the_data)

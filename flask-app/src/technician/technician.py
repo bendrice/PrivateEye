@@ -2,10 +2,10 @@ from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-
+# PrivateEye Technician blueprint
 technicians = Blueprint('technicians', __name__)
 
-#create technician profile 
+# Create technician profile 
 @technicians.route('/technician', methods=['POST'])
 def add_company():
     the_data = request.json
@@ -21,21 +21,48 @@ def add_company():
     db.get_db().commit()
     return 'Technician created!'
 
-# Get technician id
+# Get technician id given name
 @technicians.route('/technician', methods=['GET'])
 def get_tech_id():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    t_last = the_data['t_last']
+    t_first = the_data['t_first']
+
+    query = 'SELECT technician_id FROM Technician where technician_first = "'
+    query+= t_first + '" and technician_last = "' 
+    query+= t_last + '"'
+
+    current_app.logger.info(query)
     cursor = db.get_db().cursor()
-    cursor.execute('SELECT * FROM Technician')
+    cursor.execute(query)
+    column_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(column_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+
+# Gets company for particular id
+@technicians.route('/company/<company_id>', methods=['GET'])
+def get_companies(company_id):
+    cursor = db.get_db().cursor()
+    cursor.execute('select * from Company where company_id = {0}'.format(company_id))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
     for row in theData:
         json_data.append(dict(zip(row_headers, row)))
-    the_response = jsonify(json_data)
+    the_response = make_response(jsonify(json_data))
     the_response.status_code = 200
+    the_response.mimetype = 'application/json'
     return the_response
 
-# Make company visible to PE firms 
+# Make a certain company visible to PE firms 
 @technicians.route('/company', methods=['POST'])
 def update_company_visibility():
     the_data = request.json
@@ -48,6 +75,19 @@ def update_company_visibility():
     cursor.execute(query)
     db.get_db().commit()
     return 'The Company is visible to PE firms!'
+
+ # Delete company if not legit
+@technicians.route('/company', methods=['DELETE'])
+def delete_ask():
+    the_data = request.json
+    current_app.logger.info(the_data)
+    company_id = the_data['company_id']
+    query = 'DELETE FROM Company WHERE company_id = '  + str(company_id)
+    current_app.logger.info(query)
+    cursor = db.get_db().cursor()
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Company id: ' + str(company_id) +' deleted!'
 
 # Updates company status to closed (unavailible) given company name
 # when that company has accepted a bid from PE_Firm as well as deal status 
@@ -70,34 +110,6 @@ def update_company_deal_status():
     db.get_db().commit()
     return 'The Company ' + company_name + ' is no longer discoverable by PE Firms!'
 
-# Gets company for particular id
-@technicians.route('/company/<company_id>', methods=['GET'])
-def get_companies(company_id):
-    cursor = db.get_db().cursor()
-    cursor.execute('select * from Company where company_id = {0}'.format(company_id))
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
-
- # Delete company if not legit
-@technicians.route('/company', methods=['DELETE'])
-def delete_ask():
-    the_data = request.json
-    current_app.logger.info(the_data)
-    company_id = the_data['company_id']
-    query = 'DELETE FROM Company WHERE company_id = '  + str(company_id)
-    current_app.logger.info(query)
-    cursor = db.get_db().cursor()
-    cursor.execute(query)
-    db.get_db().commit()
-    return 'Company id: ' + str(company_id) +'deleted!'
-
 
 # Updates Deal feasability score between 1 to 10
 @technicians.route('/deal', methods=['PUT'])
@@ -113,8 +125,6 @@ def update_deal_feasibility():
     db.get_db().commit()
     return 'Deal score updated to ' + str(score) + ' for id:' + str(deal_id)
 
-
-#LANDING PAGE ROUTES edittable by technician 
 
 # Updates inputted deal as a Top 5 deal to be visible on landing page 
 # (only possible if the deal has been feasible with a score greater than 5)

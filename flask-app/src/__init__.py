@@ -19,7 +19,7 @@ def create_app():
     app.config['MYSQL_DATABASE_PASSWORD'] = open('/secrets/db_password.txt').readline()
     app.config['MYSQL_DATABASE_HOST'] = 'db'
     app.config['MYSQL_DATABASE_PORT'] = 3306
-    app.config['MYSQL_DATABASE_DB'] = 'PrivateEyeDB'  # Change this to your DB name
+    app.config['MYSQL_DATABASE_DB'] = 'PrivateEyeDB'  
 
     # Initialize the database object with the settings above. 
     db.init_app(app)
@@ -31,15 +31,11 @@ def create_app():
 
     # Import the various routes
     from src.views import views
-    from src.customers.customers import customers
-    from src.products.products  import products
     from src.technician.technician import technicians
     from src.private_company.private_company import private_companies
     from src.pe_firm.pe_firm import pe_firms
     # Register the routes that we just imported so they can be properly handled
     app.register_blueprint(views,       url_prefix='/v')
-    app.register_blueprint(customers,   url_prefix='/c')
-    app.register_blueprint(products,    url_prefix='/p')
     app.register_blueprint(technicians, url_prefix='/t')
     app.register_blueprint(private_companies, url_prefix='/pc')
     app.register_blueprint(pe_firms, url_prefix='/pe')
