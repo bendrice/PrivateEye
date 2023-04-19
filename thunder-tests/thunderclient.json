@@ -227,11 +227,11 @@
     "colId": "8aaf1ce6-8ea4-4c24-8d02-279005f394f3",
     "containerId": "",
     "name": "Get particular company information ",
-    "url": "localhost:8001/t/company/103",
+    "url": "localhost:8001/t/company/49",
     "method": "GET",
     "sortNum": 60000,
     "created": "2023-04-17T23:05:28.756Z",
-    "modified": "2023-04-17T23:06:06.672Z",
+    "modified": "2023-04-19T20:02:36.213Z",
     "headers": [],
     "params": [],
     "tests": []

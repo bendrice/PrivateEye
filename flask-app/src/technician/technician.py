@@ -51,7 +51,7 @@ def get_tech_id():
 @technicians.route('/company/<company_id>', methods=['GET'])
 def get_companies(company_id):
     cursor = db.get_db().cursor()
-    cursor.execute('select * from Company where company_id = {0}'.format(company_id))
+    cursor.execute('select * from Company join Deal D on Company.ask_id = D.ask_id where company_id = {0}'.format(company_id))
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
