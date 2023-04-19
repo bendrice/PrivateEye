@@ -95,14 +95,14 @@ def delete_ask():
 def update_company_deal_status():
     the_data = request.json
     company_name = the_data['company_name']
-    deal_id = the_data['deal_id']
+    d_id = the_data['d_id']
     current_app.logger.info(the_data)
     query1 = 'update Company set company_status = 0 where company_name = "' + company_name + '"'
     current_app.logger.info(query1)
     cursor = db.get_db().cursor()
     cursor.execute(query1)
 
-    query2 = 'UPDATE Deal SET deal_status = 0 where deal_id = ' + str(deal_id)
+    query2 = 'UPDATE Deal SET deal_status = 0 where deal_id = ' + str(d_id)
     current_app.logger.info(query2)
     cursor = db.get_db().cursor()
     cursor.execute(query2)
