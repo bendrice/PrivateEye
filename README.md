@@ -58,3 +58,6 @@ Start the containers with `docker compose up`.  To run in detached mode, run `do
 
 ## AppSmith
 Appsmith functions as our front end taking in the data from the users or personas which grabs our information from our VS Code and Datagrip to display in the front end. 
+
+## Link to Walkthrough 
+https://www.youtube.com/watch?v=4kHaZN8YpzM 
